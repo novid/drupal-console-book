@@ -1,10 +1,10 @@
-# Getting Services from the Service Container
+# دریافت سرویس‌ها از Service Container
 
-You can access services from the service container by:
+به شیوه‌های زیر می‌توانید از service container درخواست سرویس کنید:
 
-### Injecting services to the command Class
+### قراردادن سرویس‌ها درون کلاس Command
 
-Using the `arguments` section when registering your Command class at the `console.services.yml` file.
+استفاده از قسمت `arguments` هنگام ثبت کلاس Command در فایل `console.services.yml`.
 ```
 services:
   example.example_default:
@@ -14,7 +14,7 @@ services:
       - { name: drupal.command }
 ```
 
-Adding a new protected property.
+افزودن یک متغیر محافظت شده.
 ```
   /**
    * The $entityTypeManager definition.
@@ -24,7 +24,7 @@ Adding a new protected property.
   protected $entityTypeManager;
 ```
 
-Passing the service using the `__construct` method.
+ارسال سرویس با استفاده از متد `__construct`
 ```
   /**
    * Constructs a new DefaultCommand object.
@@ -35,9 +35,9 @@ Passing the service using the `__construct` method.
   }
 ```
 
-### Extending the `ContainerAwareCommand` base Class on your Command class.
+### گسترش کلاس پایه `ContainerAwareCommand` در کلاس Command
 
-By doing this you have access to the service container, in other words, you have access to any configured service using the provided `get` method.
+با استفاده از این روش شما به service container دسترسی دارید، به عبارت دیگر، به هر سرویس پیکربندی شده موجود توسط متد `get` دسترسی دارید.
 
 ```
 protected function execute(InputInterface $input, OutputInterface $output)

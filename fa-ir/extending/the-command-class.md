@@ -1,33 +1,33 @@
-# The Command Class
+# کلاس Command
 
-Custom Commands should extend any of the base Classes provided by the DrupalConsole Core project.
+دستورات سفارشی باید از کلاس‌های فراهم شده توسط پروژه DrupalConsole تبعیت کنند.
 
-## Extending the Base `Command` class
+## گسترش کلاس پایه `Command`
 
-By extending the provided Base `Command` Class, your command will be able to take advantage of the multi-language feature provided by DrupalConsole.
+با گسترش کلاس پایه `Command`، دستور شما قادر خواهد بود تا از ویژگی‌های چند-زبانه فراهم شده توسط DrupalConsole بهره‌مند شود.
 
-1.- Import the `Command` Class.
+۱.- کلاس `Command` را وارد کنید.
 ```
 use Drupal\Console\Core\Command\Command;
 ```
 
-2.- Extend the imported `Command` Class.
+۲.- کلاس `Command` را گسترش دهید.
 ```
 class DefaultCommand extends Command
 ```
 
-## Extending the `ContainerAwareCommand` Class.
+## گسترش کلاس `ContainerAwareCommand`
 
-By extending the `ContainerAwareCommand` Class on your class for the command (instead of the more basic `Command`), you also have access to the service container.
+با گسترش کلاس `ContainerAwareCommand` در دستور خود (بجای کلاس پایه `Command`)، به service container دسترسی پیدا خواهید کرد.
 
-In other words, you can access any configured Drupal service using the provided `get` method.
+به عبارت دیگر، می‌توانید به هر کدام از سرویس‌های پیکربندی شده دروپال با استفاده از متد `get` دسترسی یابید.
 
-1.- Import the `ContainerAwareCommand` Class.
+۱.- کلاس `ContainerAwareCommand` را وارد کنید.
 ```
 use Drupal\Console\Core\Command\ContainerAwareCommand;
 ```
 
-2.- Extend the imported `ContainerAwareCommand` Class.
+۲.- کلاس `ContainerAwareCommand` را گسترش دهید.
 ```
 class DefaultCommand extends ContainerAwareCommand
 ```

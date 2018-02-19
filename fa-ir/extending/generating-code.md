@@ -1,17 +1,15 @@
-# Generating Code with a Command
+# تولید کد با یک دستور
 
-To generate code from a Command, there are three steps:
+برای تولید کد از یک دستور، سه گام وجود دارد:
 
-1. [Create a Twig template for the code you want to generate.](#twig-template)
-2. [Create and register a custom Generator service for rendering 
-the Twig template.](#generator-service)
-3. [Inject the custom Generator service into your Command.](#inject-service)
+1. [ایجاد یک قالب Twig برای کدی که می‌خواهید تولید کنید.](#twig-template)
+2. [ایجاد و ثبت یک سرویس Generator سفارشی برای پردازش قالب Twig.](#generator-service)
+3. [قراردادن سرویس Generator سفارشی درون دستور](#inject-service)
 
 <a name="twig-template"></a>
-## Creating a Twig Template for the Generated Code
+## ایجاد یک قالب Twig برای کد تولید شده
 
-All Twig templates should be placed inside a `templates` subdirectory 
-of your module or extension. For example:
+تمام قالب‌های Twig باید درون یک دایرکتوری `templates` از زیرمجموعه افزونه شما قرار بگیرند. برای نمونه:
 
 `templates/module/info.yml.twig`
 
@@ -29,10 +27,9 @@ dependencies:
 {% endif %}
 ```
 <a name="generator-service"></a>
-## Creating a Custom Generator Service
+## ایجاد یک سرویس Generator سفارشی
 
-To create a custom Generator service, first create a class that extends from 
-`Drupal\Console\Core\Generator\Generator`. For example:
+برای ایجاد یک سرویس Generator سفارشی، ابتدا کلاسی ایجاد کنید که از `Drupal\Console\Core\Generator\Generator` تبعیت می‌کند. برای نمونه:
 
 `src/Generator/ModuleGenerator`
 
@@ -47,8 +44,7 @@ class ModuleGenerator extends Generator
 }
 ```
 
-Use the `renderFile()` method inherited from the `Generator` class to render 
-your Twig template.
+با استفاده از متد `renderFile()`، که از کلاس `Generator` به ارث رسیده است، قالب Twig خود را پردازش کنید.
 
 ```
 public function generate($module, $machineName, $output_dir, $description, $core, $package, $dependencies) {
@@ -70,7 +66,7 @@ public function generate($module, $machineName, $output_dir, $description, $core
 }
 ```
 
-Finally, register your Generator class as a custom service in `console.services.yml`.
+در نهایت، کلاس Generator خود را به عنوان یک سرویس سفارشی درون `console.services.yml` ثبت کنید.
 
 ```
 services:
@@ -80,14 +76,12 @@ services:
       - { name: drupal.generator }
 ```
 
-Be sure to include the `drupal.generator` tag so that the Twig renderer is properly 
-initialized.
+اطمینان یابید که برچسب `drupal.generator` وارد شده باشد تا پردازشگر Twig به صورت صحیح راه‌اندازی گردد.
 
 <a name="inject-service"></a>
-## Injecting Your Custom Generator Into Your Command
+## قراردادن سرویس Generator سفارشی درون دستور
 
-In `console.services.yml`, add your custom Generator service as an argument for your 
-custom Command.
+درون `console.services.yml`، سرویس Generator سفارشی را به عنوان یک آرگومان برای دستور خود قرار دهید.
 
 ```
 services:
@@ -98,7 +92,7 @@ services:
        - { name: drupal.command }
 ```
 
-And add your custom Generator to the constructor parameters for your Command class:
+و Generator سفارشی را درون پارامتر constructor از کلاس Command قرار دهید.
 
 ```
 use Drupal\your_extension\Generator\ModuleGenerator;
@@ -119,8 +113,7 @@ class ModuleCommand extends Command
 }
 ```
 
-You can now call your Generator from the `execute()` method in your Command 
-to output rendered code files:
+اکنون می‌توانید Generator را از متد `execute()` دستور خود فراخوانی کنید تا فایل‌های مورد نیاز پردازش گردند.
 
 ```
 protected function execute(InputInterface $input, OutputInterface $output) {

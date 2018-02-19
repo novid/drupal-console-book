@@ -1,15 +1,15 @@
-# Command Lifecycle
+# چرخه حیات دستور
  
-Commands have three lifecycle methods:
+چرخه حیات دستورات شامل سه متد می‌شود:
 
-## The initialize method (optional)
-This method is executed before the `interact` and `execute` methods. 
-Its main purpose is to initialize variables used in the rest of the command methods.
+## متد initialize (اختیاری)
+این متد قبل از `interact` و `execute` اجرا می‌شود.
+هدف اصلی آن مقداردهی اولیه به متغیرهایی است که در سایر متدهای دستور استفاده می‌شوند.
 
-## The interact method (optional)
-This method is executed after `initialize` and before `execute` methods. 
-Its purpose is to check if some of the options/arguments are missing and interactively ask the user for those values. This is the last place where you can ask for missing options/arguments. After this command, missing options/arguments will result in an error.
+## متد interact (اختیاری)
+این متد پس از `initialize` و قبل از `execute` اجرا می‌شود.
+هدف اصلی آن بررسی موجود بودن برخی گزینه‌ها/آرگومان‌ها است که در صورت نبود آن‌ها از کاربر به صورت تعاملی سوال بپرسد. این آخرین نقطه‌ای است که می‌توانید درخواست گزینه‌ها/آرگومان‌های مفقود را داشته باشید. پس از این دستور، گزینه‌ها/آرگومان‌های مفقود منجر به بروز خطا می‌شوند.
 
-## The execute method (required)
-This method is executed after `interact` and `initialize` methods. 
-It contains the logic you want the command to execute.
+## متد execute (اجباری)
+این متد پس از `interact` و `initialize` اجرا می‌شود.
+هدف اصلی آن منطق مورد نظر برای اجرای دستور است.

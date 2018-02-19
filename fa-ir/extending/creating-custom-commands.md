@@ -1,8 +1,8 @@
-# Creating Custom Commands
+# ایجاد دستورات سفارشی
 
-The easiest way to create a custom Command Class is to execute the `generate:command` command.
+ساده‌ترین روش برای ایجاد یک کلاس سفارشی Command اجرای `generate:command` است.
 
-Executing the command using the interactive command questions: 
+اجرای دستور با استفاده از پرسش‌های تعاملی آن:
 ```
  // Welcome to the Drupal Command generator
  Enter the extension name [config_update]:
@@ -38,7 +38,7 @@ Generated or updated files
  3 - modules/custom/example/console/translations/en/example.default.yml
 ```
 
-Executing the `generate:command` passing inline options, make sure you adjust the following command based on your requirements.
+اجرای `generate:command` و ارسال گزینه‌های خط-فرمان، اطمینان یابید که دستور زیر مبتنی بر نیازمندی شما تنظیم شود.
 ```
 drupal generate:command \
 --extension="example" \
@@ -49,4 +49,4 @@ drupal generate:command \
 --no-interaction
 ```
 
-This command execution will generate a new Command class and the service registration containing the boiler-plate required to register a new command.
+اجرای این دستور منجر به تولید یک کلاس Command جدید می‌گردد همراه با سرویس معرفی شده که کد اولیه برای ثبت آن آماده شده است.

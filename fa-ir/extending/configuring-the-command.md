@@ -1,6 +1,6 @@
-# Configuring the command.
+# پیکربندی دستور
 
-You must provide a`configure` method containing the configuration of the command as name, arguments, options, etc.
+شما باید یک متد `configure` را به منظور پیکربندی نام، آرگومان‌ها و گزینه‌های دستور خود فراهم کنید.
 ```
     /**
      * {@inheritdoc}

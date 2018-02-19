@@ -1,6 +1,6 @@
-# Registering Commands
+# ثبت دستورات
 
-To make the console commands available within a Drupal installation, you will need to register your Command Class as a service using the `console.services.yml` file at the root of your extension (module, theme, profile) and tag service definition as `drupal.command`.
+برای فعال‌سازی دستورات کنسول در یک محیط دروپال، نیاز دارید که کلاس دستور خود را به عنوان یک سرویس درون فایل `console.services.yml` واقع در دایرکتوری اصلی (افزونه، قالب یا پروفایل) قرار داده و تعریف سرویس را به صورت `drupal.command` برچسب‌گذاری کنید.
 ```
 services:
   example.example_default:
@@ -9,4 +9,4 @@ services:
     tags:
       - { name: drupal.command }
 ```
-> NOTE: The `arguments` section on the service definition is optional and used only if you will be injecting services from the container on your command.
+> یادداشت: قسمت `arguments` در تعریف سرویس اختیاری بوده و تنها در صورت استفاده از سرویس از درون container مورد نیاز خواهد بود.
