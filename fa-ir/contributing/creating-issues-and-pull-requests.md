@@ -1,13 +1,13 @@
-# Creating an Issue
-If you found an issue or maybe you like to propose a new feature to the project, you need to access the following link:
+# ایجاد یک Issue
+اگر مشکلی در پروژه پیدا کردید یا اینکه قصد دارید یک ویژگی جدید به آن اضافه کنید، باید به پیوند زیر مراجعه کنید:
 
 https://github.com/hechoendrupal/drupal-console/issues/new
 
-Please review the guidelines for contributing to Drupal Console at:
+به منظور مشارکت در کنسول دروپال لطفا راهنمایی‌های مرتبط با آن را مطالعه کنید:
 
 https://github.com/hechoendrupal/drupal-console/blob/master/CONTRIBUTING.md
 
-## Creating a Pull Request
-Remember to create a branch before start developing! It's name should contain the issue id and a slug to tell what the thing you're working on is about, for example: `1337-lorem-ipsum`
+## ایجاد یک  Pull Request
+به یاد داشته باشید که قبل از شروع توسعه، حتما یک شاخه جداگانه در گیت ایجاد کنید! نام آن باید شامل شناسه issue و عبارتی که بیانگر کار شما است، باشد. برای نمونه: `1337-lorem-ipsum`
 
-If you haven't yet contributed to a project on GitHub, or aren't still sure what the workflow looks like, read the documentation about [pull requests](https://help.github.com/articles/using-pull-requests/). You may also wish to download the GitHub application ([Mac](https://mac.github.com) | [Windows](https://windows.github.com), which simplifies the workflow a bit and provides a nice GUI for your contributions.
+اگر تاکنون در پروژه‌ای از گیت‌هاب مشارکت نکرده‌اید، یا اطمینان ندارید که با این گردشگار آشنا هستید، شاید اول بخواهید نگاهی به مستندات درباره [pull requests](https://help.github.com/articles/using-pull-requests/) بیندازید. شاید تمایل داشته باشید که برنامه رومیزی گیت‌هاب ([Mac](https://mac.github.com) یا [Windows](https://windows.github.com)) را نصب کنید، که اندکی این گردشکار را آسان کرده و از ظاهر گرافیکی بهتری برخوردار است.

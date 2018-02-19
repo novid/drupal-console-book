@@ -1,26 +1,26 @@
-# Getting the project
+# دریافت پروژه
 
-The Drupal Console is a modular project using multiple repositories.
+کنسول دروپال یک پروژه ماژولار بوده که از چندین مخزن تشکیل می‌شود.
 
-Main repositories:
+مخازن اصلی:
 * [drupal/console](https://github.com/hechoendrupal/drupal-console)
 * [drupal/console-core](https://github.com/hechoendrupal/drupal-console-core)
 * [drupal/console-extend-plugin](https://github.com/hechoendrupal/drupal-console-extend-plugin)
 * [drupal-console-dotenv](https://github.com/weknowinc/drupal-console-dotenv)
 
-Additional projects:
+پروژه‌های اضافی:
 * [drupal/console-develop](https://github.com/weknowinc/drupal-console-develop)
 * [drupal-console-yaml](https://github.com/weknowinc/drupal-console-yaml)
         
-Languages are also managed into separated repositories:
+زبان‌ها نیز درون مخازن جداگانه قرار می‌گیرند:
 * [drupal-console-en](https://github.com/hechoendrupal/drupal-console-en)
 * [drupal-console-es](https://github.com/hechoendrupal/drupal-console-es)
 
 ## Fork
-You should fork the repositories that you want to contribute. For this task you can use the github GUI.
+مخازنی که قصد مشارکت در آن‌ها را دارید باید fork کنید. اینکار از رایط گرافیکی گیت‌هاب قابل انجام است.
 
 ## Clone
-You need to define a directory where you will clone the repositories. i.e. `/Users/username/drupal-console-code`
+برای رونوشت‌گیری از مخزن fork شده باید یک دایرکتوری روی سیستم خود در نظر بگیرید. برای نمونه، `/Users/username/drupal-console-code`
 ```
 cd /Users/username/drupal-console-code
 git clone git@github.com:[your-github-user-here]/drupal-console.git
@@ -28,11 +28,11 @@ git clone git@github.com:[your-github-user-here]/drupal-console-core.git
 git clone git@github.com:[your-github-user-here]/drupal-console-en.git
 ```
 
-## Install dependencies
-Now that you have cloned the repositories, you need to download dependencies using Composer.
+## نصب وابستگی‌ها
+اکنون که مخازن مورد نظر خود را رونوشت‌گیری کرده‌اید، باید با استفاده از Composer وابستگی‌های مربوط به آن‌ها را دانلود کنید.
 ```
 cd /Users/username/drupal-console-code/[cloned-repository]
 composer install
 ```
 
-Read the next step to learn how to link and test these repositories into a Drupal site.
+به منظور آگاهی از چگونگی پیوند و آزمون این مخازن در یک سایت دروپالی قسمت بعد را مطالعه کنید.

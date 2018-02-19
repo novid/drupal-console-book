@@ -1,20 +1,21 @@
-# Keeping your fork up to date
+# بروزنگهداری fork از پروژه
 
-After some time your forked repository and the original one (called upstream) will eventually get out of sync leaving you with an old, unsupported version.
+پس از گذشت زمان، مخزن fork شده شما و مخزن اصلی (که upstream نامیده می‌شود) از حالت همگام‌سازی خارج شده و شما با یک نسخه قدیمی از نرم‌افزار مواجه می‌شوید.
 
-To sync changes you make in a fork with the original repository, you should:
+برای همگام‌سازی تغییرات خود با مخزن اصلی به صورت زیر عمل کنید:
 
-## Configuring a remote fork:
-Specify and configure a new remote upstream repository that points to the upstream repository in Git.
+## پیکربندی یک fork راه‌دور
+یک مخزن upstream جدید را که به مخزن اصلی در گیت اشاره می‌کند، مشخص و پیکربندی کنید.
 ```
 git remote add upstream https://github.com/hechoendrupal/drupal-console.git
 ```
-For detailed information please visit Github's guide [Configuring a remote fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)  
+برای اطلاعات بیشتر لطفا راهنمای [پیکربندی یک fork راه‌دور](https://help.github.com/articles/configuring-a-remote-for-a-fork/) در گیت‌هاب را مطالعه کنید.
 
-## Syncing your fork
-Sync your fork to keep it up-to-date with the upstream repository.
+## همگام‌سازی fork خود
+fork خود را با مخزن upstream تعیین شده همگام سازید.
 ```
 git fetch upstream
 git merge upstream/master
 ```
-For detailed information please visit Github's guide [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
+
+برای اطلاعات بیشتر لطفا راهنمای [همگام‌سازی یک fork](https://help.github.com/articles/syncing-a-fork/) در گیت‌هاب را مطالعه کنید.

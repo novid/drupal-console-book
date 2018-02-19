@@ -1,26 +1,26 @@
-# Running the project
-In order to contribute you will need a working Drupal site linked to the packages you cloned and forked.
+# اجرای پروژه
+به منظور مشارکت، شما به سایت دروپالی نیاز دارید که به بسته‌های clone و fork شده موجود متصل باشد.
 
-## Execute the automated process
-DrupalConsole provides you with a command to take care of all this process for you.
+## اجرای فرآیند خودکارسازی
+DrupalConsole شامل دستوری است که تمام این فرآیند را برای شما انجام می‌دهد.
 ```
 drupal develop:contribute \
 --drupal=/path/to/drupal8.dev \
 --code=/Users/username/drupal-console-code/
 ```
 
-The option `--drupal` is the directory where the new drupal site will be created and the option `--code` is the parent directory where the different DrupalConsole repositories were cloned.
+گزینه `--drupal` دایرکتوری است که سایت جدید دروپالی در آن ایجاد و گزینه `--code` دایرکتوری است که مخازن گوناگون از DrupalConsole در آن قرار گرفته‌اند.
 
-> NOTES:
+> یادداشت:
 >
-> You must execute `drupal init` before in order to copy the `~/.console/chain/develop-contribute.yml` on your local system.
+> به منظور رونوشت‌گیری از فایل `~/.console/chain/develop-contribute.yml` در سیستم محلی خود، ابتدا باید دستور `drupal init` را اجرا کنید.
 >
-> Make sure you have the latest version of DrupalConsole. Get the latest version of DrupalConsole by following the instructions as mentioned [here](https://github.com/hechoendrupal/drupal-console-launcher/blob/master/README.md).
+اطمینان یابید که آخرین نسخه از DrupalConsole نصب شده باشد. برای اینکار می‌توانید مطابق با دستورات [این قسمت](https://github.com/hechoendrupal/drupal-console-launcher/blob/master/README.md) عمل کنید.
 
-## Execute all the steps manually
-If you want to execute all the steps manually you can follow the instructions below:
+## اجرای تمام گام‌ها به صورت دستی
+اگر می‌خواهید که تمام گام‌ها را به صورت دستی اجرا کنید باید طبق دستورات زیر عمل کنید:
 
-### Download Drupal and DrupalConsole
+### دانلود دروپال و کنسول دروپال
 ```
 composer create-project \
 drupal-composer/drupal-project:8.x-dev \
@@ -30,41 +30,41 @@ drupal8.dev \
 --no-interaction
 ```
 
-### Install Drupal using SQLite
+### نصب دروپال با استفاده از  SQLite
 ```
 drupal site:install standard --db-type="sqlite" --no-interaction
 ```
-> NOTE: You can install drupal using MySQL by executing the `site:install` command and answering the questions from the interactive mode or passing the required options.
+> یادداشت: شما می‌توانید دروپال را با استفاده از MySQL و با استفاده از دستور `site:install` یا ارسال گزینه‌های مورد نیاز نصب کنید.
 
-### Download the Drupal Console Develop package
+### دانلود بسته توسعه کنسول دروپال
 ```
 composer require drupal/console-develop --dev
 ```
 
-### Create a symbolic link between Drupal and forked repositories
+### ایجاد یک پیوند نمادین بین دروپال و مخازنی که fork شده‌اند
 ```
 drupal develop:create:symlinks \
 --code-directory=/Users/username/drupal-console-code/
 ```
 
-## Downloading additional Drupal Console language or packages
+## دانلود زبان یا بسته‌های اضافی کنسول دروپال
 
-If you want to contribute translating Drupal Console to [Spanish](https://github.com/hechoendrupal/drupal-console-es) you should:
+اگر می‌خواهید که در ترجمه کنسول دروپال به [اسپانیایی](https://github.com/hechoendrupal/drupal-console-es) مشارکت کنید باید:
 
-1.- Download it on the drupal site by executing the following command.
+۱.- آن را روی سایت دروپالی با اجرای دستور زیر دانلود کنید.
 
 ```
 composer require drupal/console-es
 ```
 
-2.- Fork and clone the repo to your local directory.
+۲.- مخزن مورد نظر را درون سیستم محلی خود fork و clone کنید.
 
-3.- Execute the `develop:create:symlinks` again, to create symlinks including the recently added package.
+۳.- دستور `develop:create:symlinks` را به منظور ایجاد پیوندهای نمادین بین دروپال و بسته‌های تازه اضافه شده اجرا کنید.
 
-This applies for additional languages and packages i.e [drupal/console-yaml](https://github.com/weknowinc/drupal-console-yaml).
+اینکار در مورد زبان‌ها و بسته‌های اضافی صدق می‌کند. برای نمونه، [drupal/console-yaml](https://github.com/weknowinc/drupal-console-yaml).
 
-## Wrapping up
+## جمع‌بندی
 
-Now you can do the required changes and start contributing, commit you changes, push code to your forked repositories and create a Pull Request to the respective repository.
+اکنون می‌توانید تغییرات مورد نظر خود را اعمال کرده و در پروژه مشارکت کنید. در انتها نیز یک PR به مخزن اصلی پروژه ارسال کنید.
 
-Happy coding ... thanks for contributing to Drupal Console.
+کدنویسی خوش بگذره!‌ ممنون که در کنسول دروپال مشارکت می‌کنی.
