@@ -1,16 +1,16 @@
-# Where do I find the project?
+# از کجا به دنبال پروژه بگردم؟
 
-## Project landing page
+## صفحه اصلی پروژه
 http://drupalconsole.com
 
-## Github repository
+## مخزن گیت‌هاب
 https://github.com/hechoendrupal/drupal-console
 
-## Documentation
+## مستندات
 https://docs.drupalconsole.com/
 
-## Support chat
+## گفتگوی آنلاین
 https://gitter.im/hechoendrupal/DrupalConsole
 
-## More information on Drupal.org project page
+## اطلاعات بیشتر درباره پروژه
 https://drupal.org/project/console

@@ -1,6 +1,6 @@
-# What is the Drupal Console?
-The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal. From the ground up, it has been built to utilize the same modern PHP practices which were introduced in Drupal 8.
+# کنسول دروپال چیست؟
+رابط خط-فرمان در دروپال، که به شما اجازه تولید کد نمونه، تعامل و عیب‌یابی دروپال را می‌دهد. از ابتدا نیز طوری طراحی شده است که با جدیدترین استانداردهای PHP موجود در دروپال ۸ سازگار باشد.
 
-Drupal Console started as an scaffolding tool but evolved into a full CLI with the help of multiple contributors.
+کنسول دروپال ابتدا به صورت یک پروژه کوچک آغاز شد اما با کمک چندین مشارکت‌کننده به شکل یک رابط خط-فرمان کامل درآمد.
 
-The Drupal Console makes use of the Symfony Console and other third party components which allows you to automatically generate most of the code needed for a Drupal 8 module. In addition, Drupal Console helps you interact with your Drupal installation.
+کنسول دروپال از کنسول سیمفونی و بسیاری اجزای دیگر تشکیل شده است که به شما اجازه می‌دهد به راحتی کد مورد نیاز خود برای یک افزونه دروپال ۸ را تولید کنید. علاوه بر این، کنسول دروپال در تعامل با نسخه نصب شده دروپال به شما یاری می‌رساند.

@@ -1,11 +1,11 @@
-# Why should you care about it
-Drupal 8 is more technically advanced compared to its predecessor and managing the increasing complexity of Drupal 8 could be a daunting task for anyone. Drupal Console is a suite of tools to help manage that complexity. Writing a Drupal 8 module now involves a lot more boilerplate code and there is a lot you need to know and do just to *get started* building a new module. These tasks can be repetitive and tedious, and can therefore create increased potential for errors. Fortunately, a lot of the new code can be automatically generated, using Drupal Console, without risk of copy/paste errors and with a lot of saved time.
+# چرا باید به آن اهمیت بدهید
+دروپال ۸ در مقایسه با نسخه‌های پیشین بسیار پیشرفته‌تر بوده و مدیریت پیچیدگی‌های موجود در دروپال ۸ برای هر فردی می‌تواند خسته‌کننده باشد. کنسول دروپال جعبه ابزاری است که می‌تواند در مدیریت این پیچیدگی‌ها به شما یاری رساند. نوشتن یک افزونه برای دروپال ۸ چیزی بیش از *راه‌اندازی اولیه* و کدهای ساده است به طوری که باید مفاهیم بیشتری را فرا گیرید. این وظایف می‌توانند تکراری و خسته‌کننده باشند، که این امر منجر به افزایش احتمال خطا می‌شود. خوشبختانه، قسمت زیادی از کد اولیه می‌تواند توسط کنسول دروپال به صورت خودکار تولید شود بدون اینکه خطرات جانبی در بر داشته باشد و توجه به این نکته که زمان ارزشمند شما را ذخیره می‌کند.
 
-## Benefits of the Drupal Console:
-* Takes advantage of the Symfony Console and other third-party components to generate PHP, YML, and other files.
-* Takes advantage of other modern development practices.
-* Saves development time, both during migration of existing Drupal modules and when writing new ones.
-* Provides easy-to-learn tools that make Drupal 8 development, by extension, also easier to learn.
-* Reduces development time for remaining Drupal 8 tasks and for development of new modules.
+## ویژگی‌های کنسول دروپال:
+* بهره‌مندی از کنسول سیمفونی و سایر اجزای دیگر به منظور تولید فایل‌های PHP و YAML و ...
+* بهره‌مندی از سایر استانداردهای جدید در توسعه.
+* ذخیره‌سازی زمان توسعه، حین مهاجرت از افزونه‌های قدیمی‌تر یا نوشتن افزونه‌های جدید.
+* فراهم‌کردن ابزاری ساده که کار توسعه و آموزش دروپال ۸ را آسان می‌سازد.
+* کاهش زمان توسعه برای سایر وظایف دروپال ۸ و افزونه‌های جدید.
 
-Follow along in this documentation as we explore the power of this exciting new set of tools.
+در ادامه این مستندات با ما باشید تا قدرت واقعی این ابزار را به شما معرفی کنیم.
