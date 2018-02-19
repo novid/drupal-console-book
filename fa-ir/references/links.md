@@ -1,12 +1,12 @@
-# References
+# مراجع
 
-## Drupal Console code repository
+## مخزن کد کنسول دروپال
 https://github.com/hechoendrupal/drupal-console
 
-## Documentation repository
+## مخزن مستندات
 https://github.com/hechoendrupal/drupal-console-book
 
-## Resources
+## منابع
 - [Symfony Components](http://symfony.com/components)
 - [Drupal 8](https://www.drupal.org/drupal-8.0)
 - [PHP the right way](http://www.phptherightway.com/)
