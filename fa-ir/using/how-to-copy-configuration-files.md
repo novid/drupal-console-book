@@ -1,13 +1,13 @@
-# How to copy configuration files
-The first task you should do after installing Drupal Console is to execute the `init` command. Executing this command will copy the project configurations files to your local computer. Overriding values on these copied files is how you can change DrupalConsole behaviour.
+# چگونگی رونوشت‌گیری از فایل‌های پیکربندی
+اولین کاری که بلافاصله پس از نصب کنسول دروپال باید انجام دهید فراخوانی دستور `init` است. اجرای این دستور منجر به رونوشت‌گیری از فایل‌های پیکربندی پروژه در رایانه شخصی شما می‌شود. بازنویسی مقادیر موجود در این فایل‌های پیکربندی، شیوه‌ای است که می‌توانید با استفاده از آن عملکرد DrupalConsole را تغییر دهید.
  
 ```
 drupal init [--override]
 ```
 
-The first question you will be asked by the interactive mode of this command will be `Select destination to copy configuration:` and the options shown will vary depending the directory where you ran this command:  
+اولین پرسش مطرح شده در حالت تعاملی این دستور عبارت است از `Select destination to copy configuration:` که گزینه‌های نمایش داده شده مبتنی بر مکان ذخیره‌سازی کنسول متفاوت خواهد بود:
 
-Running this command outside of a drupal site directory the options will be.
+گزینه‌هایی که حین اجرای این دستور خارج از محیط دروپال نمایش داده می‌شوند.
 ```
  Select destination to copy configuration:
   [0] /etc/console/
@@ -15,7 +15,7 @@ Running this command outside of a drupal site directory the options will be.
  >
 ```
 
-Running this command within a drupal site.
+گزینه‌هایی که حین اجرای این دستور داخل محیط دروپال نمایش داده می‌شوند.
 ```
  Select destination to copy configuration:
   [0] /etc/console/
@@ -24,5 +24,4 @@ Running this command within a drupal site.
  >
 ```
 
-The rest of the options for this command are the same regardless of the directory you execute this command.
-  
+باقی گزینه‌های این دستور بدون در نظر گرفتن دایرکتوری اجرای آن، یکسان خواهند بود.

@@ -1,9 +1,9 @@
-# How to use Drupal Console in a multi-site installation
+# چگونگی استفاده از کنسول دروپال در یک محیط چند-سایته
 
-Drupal Console provides support for Drupal multi-site installations. This project provides the `debug:multisite` command to debug multi-site installations and the `--uri` option to interact with multi-site installations.
+کنسول دروپال از محیط چند-سایته دروپال پشتیبانی می‌کند. این پروژه دستور `debug:multisite` را فراهم می‌کند که برای عیب‌یابی محیط‌های چند-سایته بکار می‌رود و با استفاده از گزینه `--uri` می‌توان بین این محیط‌ها پیمایش کرد.
 
-### How to list all known multi sites
-Drupal Console uses the sites/sites.php file to determine the multi site configuration. See sites/example.site.php how to configure this file.
+### چگونه تمام محیط‌های چند-سایته را فهرست کنیم
+کنسول دروپال با استفاده از فایل sites/sites.php پیکربندی محیط چند-سایته را تشخیص می‌دهد. برای پیکربندی این فایل، sites/example.site.php را مشاهده کنید.
 ```
 drupal debug:multisite
 
@@ -14,10 +14,10 @@ drupal debug:multisite
 | drupal8.multi.dev   | /var/www/drupal8.dev/multi.dev |
 +---------------------+--------------------------------+
 
- Sites are written using the format: <port>.<domain>.<path>
+سایت‌ها با استفاده از قالب <port>.<domain>.<path> نوشته می‌شوند.
 ```
 
-### How to execute a command against a multi-site installation
+### چگونگی اجرای یک دستور در یک محیط چند-سایته
 ```
 drupal --uri=http://drupal8.multi.dev cr all
 drupal --uri=drupal8.multi.dev cr all

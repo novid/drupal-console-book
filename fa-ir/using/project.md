@@ -1,22 +1,22 @@
-# Using the project
+# استفاده از پروژه
 
-Drupal Console provides two types of commands.
+کنسول دروپال دو نوع دستور را فراهم می‌کند.
 
-1. **Global Launcher Commands:** These commands can run outside of a Drupal 8 site root.
-2. **Per-site Commands:** These commands must be run within a Drupal 8 site root.
+1. **دستورات سراسری:** این دستورات می‌توانند خارج از محیط دروپال ۸ اجرا شوند.
+2. **دستورات محلی:** این دستورات باید داخل محیط دروپال ۸ اجرا شوند.
 
-### Executing Drupal Console outside a Drupal site root 
-You can run Drupal Console from any directory on your system by using the `--root` option to define the Drupal root to be use in the command execution. 
+### اجرای کنسول دروپال خارج از محیط دروپال ۸
+شما می‌توانید با استفاده از گزینه `--root` برای مشخص کردن دایرکتوری مورد نظر دروپال به اجرای کنسول و دستورات مرتبط با آن بپردازید.
 ```
 drupal --root=/var/www/drupal8.dev cr all
 ```
 
-**NOTE:** Possible messages when executing Drupal Console outside a Drupal site root and no `--root` option provided.
+**یادداشت:** در صورت اجرای کنسول دروپال خارج از محیط دروپال ۸ بدون استفاده از گزینه `--root`، ممکن است پیام‌های مختلفی دریافت کنید.
 
-When running the project outside of a Drupal 8 site root, the following message will be shown.  
+هنگام اجرای کنسول خارج از محیط دروپال ۸، پیام زیر نمایش داده می‌شود.
 > In order to list all of the available commands, you should run this inside a drupal root directory.
 
-When running the project within of a Drupal 8 site root, but site is not yet installed, the following message will be shown.
+هنگام اجرای کنسول داخل محیط دروپال ۸، اما قبل از نصب آن، پیام زیر نمایش داده می‌شود.
 > In order to list all of the available commands you should install drupal first.
 
-If you already have an existing Drupal 8 site and have installed the global Launcher using the instructions in [2.2](../getting/launcher.md), you will still need to install it into the Drupal site using instructions at [2.1](../getting/composer.md) section.
+اگر هم اکنون یک سایت دروپال ۸ دارید و کنسول دروپال را به صورت سراسری در سیستم خود نصب کرده‌اید، نیاز است که آن را درون سایت دروپال ۸ نیز، با توجه به دستورالعمل‌های موجود در قسمت [2.1](../getting/composer.md)، نصب کنید.

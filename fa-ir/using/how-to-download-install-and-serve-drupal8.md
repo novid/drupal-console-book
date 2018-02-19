@@ -1,15 +1,15 @@
-# How to download, install and serve Drupal 8
+# چگونگی دانلود، نصب و راه‌اندازی دروپال ۸
 
-The easiest way to try Drupal 8 in your local machine is by executing the `quick:start` command.
+ساده‌ترین روش برای امتحان کردن دروپال ۸ در ماشین خود، اجرای دستور `quick:start` است.
 
 ```
 drupal quick:start
 ```
-> NOTE: You must execute `drupal init` before in order to copy the `~/.console/chain/quick-start.yml` on your local system.
+> یادداشت: به منظور رونوشت‌گیری از فایل `~/.console/chain/quick-start.yml` در سیستم خود، ابتدا باید `drupal init` را اجرا کنید.
 
-The `chain` command helps you to automate command execution, allowing you to define an external YAML file containing the definition name, option and arguments of several commands and execute that list based on the sequence defined in the file.
+دستور `chain` به شما کمک می‌کند تا اجرای دستورات را به صورت خودکار انجام دهید، به صورتی که ابتدا یک فایل خارجی YAML را تعریف می‌کنید و مجموعه دستورات، گزینه‌ها و آرگومان‌های مورد نیاز را پشت سر هم قرار می‌دهید تا به ترتیبی که قرار دارند اجرا شوند.
 
-The content of the provided `~/.console/chain/quick-start.yml` file is:
+محتوای فایل `~/.console/chain/quick-start.yml` عبارت است از:
 ```
 # How to use
 # quick:start --directory="/path/to/drupal-project/"
@@ -39,6 +39,6 @@ commands:
       bin: drupal server --root=%{{directory}}ß
 ```
 
-The previous configuration will execute several commands, in this case commands that will download and install Drupal using SQLite, and finally start the PHP's built in server, now you only need to open your browser and point it to 127.0.0.1:8088.
+پیکربندی فوق به اجرای چندین دستور می‌پردازد، در این مورد دستوراتی که دروپال را دانلود کرده و در قالب SQLite نصب می‌کند و در نهایت با راه‌اندازی سرور درونی PHP به شما امکان مرور سایت را از نشانی 127.0.0.1:8088 می‌دهد.
 
-You can duplicate or make changes on the provided YAML file, to add commands to download modules `module:download`, install modules `module:install`, import configurations `config:import` and restore your database `database:restore` or any other command provided by DrupalConsole or a custom command by your own module.
+شما می‌توانید محتوای این فایل را برداشته و تغییراتی روی آن انجام دهید، برای نمونه دستوراتی برای دانلود افزونه `module:download`، نصب افزونه `module:install`، واردکردن پیکربندی `config:import`، بازیابی پایگاه‌داده `database:restore` یا هر دستور دیگری که توسط DrupalConsole یا افزونه‌های سفارشی پشتیبانی می‌شود.
