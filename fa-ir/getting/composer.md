@@ -1,18 +1,18 @@
-# Install Drupal Console Using Composer
+# نصب کنسول دروپال با استفاده از Composer
 
-Change directory to Drupal site:
+دایرکتوری را به سایت دروپال تغییر دهید:
 ```
 cd /path/to/drupal8.dev
 ```
 
-Execute composer require command: 
+دستور composer require را اجرا کنید:
 ```
 composer require drupal/console:~1.0 \
 --prefer-dist \
 --optimize-autoloader
 ```
 
-## Download using DrupalComposer project template
+## دانلود با استفاده از قالب پروژه DrupalComposer
 ```
 composer create-project \
 drupal-composer/drupal-project:8.x-dev \
@@ -22,7 +22,7 @@ drupal8.dev \
 --no-interaction
 ```
 
-## Update DrupalConsole
+## بروزرسانی DrupalConsole
 ```
 composer update drupal/console --with-dependencies
 ```

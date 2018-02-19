@@ -1,21 +1,21 @@
-# Installing Drupal Console on Windows
+# نصب کنسول دروپال در ویندوز
 
-Here is a [link](https://evolvingweb.ca/blog/installing-drupal-console-windows) to an excellent article about Installing Drupal Console on Windows using Acquia Dev Desktop.
+یک [مقاله](https://evolvingweb.ca/blog/installing-drupal-console-windows) خوب برای نصب کنسول دروپال در ویندوز وجود دارد که با استفاده از Acquia Dev Desktop انجام می‌شود.
 
-When using Windows you will need some extra tools. 
+در صورت استفاده از سیستم عامل ویندوژ، شما به چند ابزار اضافی نیاز دارید.
 
-## CLI tools
-* [Console emulator for Windows](http://cmder.net/)
-* [Git for Windows. Provides a BASH emulator.](https://git-for-windows.github.io/)
-* [Composer](https://github.com/composer/windows-setup)
+## ابزارهای خط-فرمان
+* [شبیه‌ساز کنسول برای ویندوز](http://cmder.net/)
+* [گیت برای ویندوز، که یک محیط شبه bash را ایجاد می‌کند](https://git-for-windows.github.io/)
+* [کامپوزر](https://github.com/composer/windows-setup)
 
-## Local server Stack
+## نصب سرور محلی
 * [Acquia Dev Desktop](https://dev.acquia.com/downloads)
 * [XAMP](https://www.apachefriends.org/index.html)
 * [WAMP](http://www.wampserver.com/en/)
 * [MAMP](https://www.mamp.info/)
 
-## Virtual Environments
+## محیط‌های مجازی
 * [DrupalVM](https://www.drupalvm.com)
 * [Docksal](https://docksal.io)
 * [Lando](https://docs.lndo.io)

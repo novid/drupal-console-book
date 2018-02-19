@@ -1,23 +1,22 @@
-# Getting the project
-You need to install two things to get DrupalConsole working:
-1. The DrupalConsole Launcher
-2. DrupalConsole itself
+# دریافت پروژه
+برای راه‌اندازی کنسول دروپال به دو چیز نیاز دارید:
+1. فایل راه‌انداز DrupalConsole
+2. فایل اجرایی DrupalConsole
 
-## Why do I need the Launcher?
-This is a global executable that enables you to run the command, `drupal`, from any directory within your site's project. 
-Without it you will be inconvenienced by having to run the command only from your drupal root directory. 
+## چرا به راه‌انداز نیاز دارم؟
+این یک فایل اجرایی سراسری است که به شما اجازه اجرای دستور `drupal` را از هر دایرکتوری موجود در پروژه سایت می‌دهد. بدون این فایل، تنها می‌توانید از دایرکتوری اصلی پروژه دروپال آن را فراخوانی کنید.
 
-For example, if you have Drupal root in a /web directory, and a composer.json and your vendor directory in the directory above that, you will be able to run the `drupal` command from the same directory as the composer.json file. Even better, you can run it from any subdirectory under that as many levels deep as you would like to go.
+برای نمونه، اگر پروژه دروپال در دایرکتوری /web و فایل composer.json و دایرکتوری vendor در مسیر بالایی آن قرار داشته باشد، شما می‌توانید دستور `drupal` را از همان دایرکتوری موجود برای فایل composer.json فراخوانی کنید. حتی بهتر از این، در تمام دایرکتوری‌های فرزند آن با هر عمقی می‌توانید این دستور را فراخوانی کنید.
 
-[Install Drupal Console Launcher aka Global executable](./launcher.md)
+[نصب راه‌انداز کنسول دروپال یا همان فایل اجرایی سراسری](./launcher.md)
 
-## Install DrupalConsole in each one of your projects using Composer
-Each one of your site projects should have it's own DrupalConsole installed. This is done using Composer.
+## نصب DrupalConsole در هر یک از پروژه‌های خود با استفاده از Composer
+هر یک از پروژه‌های سایت شما باید DrupalConsole مرتبط با خود را داشته باشد، که اینکار توسظ Composer انجام می‌شود.
 
-[Install Drupal Console Using Composer](./composer.md) 
+[نصب کنسول دروپال با استفاده از Composer](./composer.md) 
 
-**Notes:** Starting on RC releases DrupalConsole must be installed per site. Install Drupal Console using `composer global require` is no longer supported.
+**یادداشت:** با شروع انتشارهای آزمایشی، DrupalConsole باید برای هر سایت به صورت جداگانه نصب شود. نصب کنسول دروپال با استفاده از `composer global require` دیگر پشتیبانی نمی‌شود.
 
-**Help!**
+**کمک!**
 
-See the FAQ section below (section 7) for help with specific installation and command issues.
+برای دریافت راهنمایی درباره شیوه نصب و مشکلات مرتبط با دستورات، قسمت پرسش‌های متداول را مشاهده کنید.

@@ -1,27 +1,27 @@
-# Install Drupal Console Launcher using the phar
+# نصب راه‌انداز کنسول دروپال با استفاده از Phar
 
 ```
 curl https://drupalconsole.com/installer -L -o drupal.phar
 mv drupal.phar /usr/local/bin/drupal
 chmod +x /usr/local/bin/drupal
 ```
-NOTE: If you don't have curl you can try
+یادداشت: اگر ابزار curl را ندارید می‌توانید به صورت مستقیم از php استفاده کنید
 ```
 php -r "readfile('https://drupalconsole.com/installer');" > drupal.phar
 ```
 
-## Update DrupalConsole Launcher 
+## بروزرسانی راه‌انداز DrupalConsole
 ```
 drupal self-update
 ```
 
-## Run Drupal Console using the Launcher
+## اجرای کنسول دروپال با استفاده از راه‌انداز
 ```
 drupal
 ```
 
-## Installing the Launcher using Composer 
-Set Composer global `minimum-stability` and `prefer-stable` configurations.
+## نصب راه‌انداز کنسول دروپال با استفاده از Composer
+پیکربندی‌های `minimum-stability` و `prefer-stable` را تنظیم کنید.
 ```
 composer global config minimum-stability dev
 composer global config prefer-stable true
@@ -30,7 +30,6 @@ composer global config prefer-stable true
 composer global require drupal/console-launcher:~1.0
 ```
 
-You must execute the launcher within a drupal site directory or use `--root=/path/to/drupal8.dev
-` to specify your drupal site path.
+بایستی فایل راه‌انداز را از درون یک سایت دروپالی اجرا کنید یا اینکه از گزینه `--root=/path/to/drupal8.dev` برای مشخص کردن مسیر دروپال بهره بگیرید.
 
-**NOTE:** The name `drupal` is just an alias you can name it anything you like.
+**یادداشت:** `drupal` فقط یک نام مستعار است و شما می‌توانید آن را به هر چه می‌خواهید تغییر دهید.
