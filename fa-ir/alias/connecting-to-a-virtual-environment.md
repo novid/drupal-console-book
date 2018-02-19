@@ -1,8 +1,8 @@
-# Connecting to a virtual environment
+# اتصال به یک محیط مجازی
 
-You can connect to a virtual-machine/docker by providing the proper values for `extra-options` and `type`.
+با فراهم کردن مقادیر مناسب برای گزینه‌های `extra-options` و `type` می‌توانید به یک ماشین مجازی متصل شوید.
 
-## DrupalVM Example
+## مثالی از DrupalVM
 ```
 dev:
   root: /var/www/drupalvm/drupal
@@ -12,12 +12,11 @@ dev:
   type: ssh
 ```
 
-##  Drupal4Docker example
+##  مثالی از Drupal4Docker
 ```
 dev:
   root: /var/www/html
   extra-options: docker-compose exec --user=82 php
   type: container
 ```
-When connecting using `type: container` there is no need to provide `host` and `user` values.
- 
+هنگام اتصال با استفاده از `type: container` نیازی به فراهم کردن مقادیر `host` و `user` نیست.

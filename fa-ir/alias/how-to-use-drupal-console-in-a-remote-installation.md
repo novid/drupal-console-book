@@ -1,13 +1,13 @@
-# How to use Drupal Console in a remote installation
+# چگونگی استفاده از کنسول دروپال در یک سرور راه‌دور
 
-Site aliases can be executed using the `--target` option and passing the site name you want to interact with.
+نام‌های مستعار سایت می‌توانند با استفاده از گزینه `--target` و قرار دادن نام سایت به عنوان آرگومان، مورد استفاده قرار گیرند:
   
 ```
 drupal --target=sample.dev cr all
 ```
 
-Site aliases can also be executed by using the legacy `@` identifier as:
+نام‌های مستعار سایت همچنین می‌توانند با استفاده از شناسه قدیمی `@` نیز مورد استفاده قرار گیرند:
 
 ```
 drupal @sample.dev cr all
-```  
+```

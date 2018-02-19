@@ -1,10 +1,10 @@
-# Setting up your local machine
+# راه‌اندازی ماشین محلی خود
 
-Using a site alias requires some local configuration.
+استفاده از نام مستعار یک سایت نیازمند برخی پیکربندی‌های است.
 
-## Global configuration 
+## پیکربندی سراسری
 
-Global configurations can be provided using the copied file `~/.console/config.yml`. This information is grouped within the `remote` key.
+پیکربندی‌های سراسری می‌توانند با استفاده از فایل `~/.console/config.yml` فراهم شوند. این اطلاعات به صورت گروه‌بندی شده درون کلید `remote` قرار می‌گیرند.
 
 ```
 application:
@@ -17,9 +17,9 @@ application:
     type: ssh
 ```
 
-## Specific site configuration
+## پیکربندی محلی
 
-Site alias configuration could be provided by adding a YAML file at `/path/to/site/console/sites/sample.yml` or `~/.console/sites/sample.yml` 
+پیکربندی نام مستعار سایت می‌تواند با استفاده از یک فایل YAML درون `/path/to/site/console/sites/sample.yml` یا `~/.console/sites/sample.yml` فراهم شود.
 
 ```
 local:
@@ -37,9 +37,9 @@ prod:
   type: ssh
 ```
 
-## Debug sites.
+## فهرست نام‌های مستعار
 
-All known sites alias can be listed by executing the `debug:site` command.
+تمام سایت‌های شناخته شده می‌توانند توسط دستور `debug:site` فهرست شوند.
 
 ```
 drupal debug:site
@@ -53,7 +53,7 @@ drupal debug:site
 +--------------------+-----------------+------------------------+
 ```
 
-A site configuration details can be shown by passing the site name as argument to the `debug:site` command. 
+جزئیات پیکربندی یک سایت می‌تواند با ارسال نام سایت به عنوان آرگومان برای دستور `debug:site` نمایش داده شود.
 ```
 drupal debug:site sample.dev
 
@@ -66,4 +66,4 @@ host: 140.211.10.62
 type: ssh
 ```
 
-**NOTE:** As you may notice the global configuration and the specific site configuration are merged when debugging a site. You can override any global configuration by adding those keys on the site specific configuration.
+**یادداشت:** شاید تشخیص داده باشید که پیکربندی‌های سراسری و محلی هنگام دیباگ یک سایت با یکدیگر ادغام می‌شوند. پس می‌توانید هر یک از پیکربندی‌های سراسری را با قرار دادن کلیدشان در پیکربندی محلی بازنویسی کنید.

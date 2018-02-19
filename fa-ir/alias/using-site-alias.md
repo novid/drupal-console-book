@@ -1,27 +1,27 @@
-# Using site alias
+# استفاده از نام مستعار سایت
 
-Drupal Console allows you to run commands from your local server but actually execute them on a local, remote or virtual (VM, Docker) Drupal installation by using site aliases.
+کنسول دروپال به شما اجازه می‌دهد که دستورات را از محیط محلی خود فراخوانی کرده ولی در واقع در محیط محلی، راه‌دور یا مجازی دیگری اجرا کنید، که اینکار با استفاده از نام‌های مستعار سایت صورت می‌پذیرد.
 
-Site alias files uses YAML format to provide a collection of predefined options once an alias is defined you can call them using a short name. 
+فایل‌های مرتبط با نام مستعار سایت از قالب YAML استفاده می‌کنند، تا مجموعه گزینه‌های از پیش تعریف شده را فراهم سازند تا زمانی که نام مستعار سایت ایجاد شد شما بتوانید با یک اسم کوتاه آن را فراخوانی کنید.
 
-A site alias could be defined for a remote site by site using `type: ssh`. In this case the ssh command will be used to execute the command on the remote installation.   
+یک نام مستعار می‌تواند برای یک سایت راه‌دور به صورت `type: ssh` مورد استفاده قرار گیرد. در این صورت، با استفاده از دستور ssh ارتباط واقعی با سرور برقرار می‌شود.
 
-Site alias files are discoverable from the following paths:
+فایل‌های مرتبط با نام مستعار سایت از مسیرهای زیر قابل شناسایی هستند:
 
-* **Globally**: `~/.console/sites/`
-* **Per site**: `/path/to/site/console/sites/`
+* **سراسری**: `~/.console/sites/`
+* **محلی**: `/path/to/site/console/sites/`
 
-## Site alias valid options
+## گزینه‌های معتبر در نام مستعار سایت
 
-List of valid key/value options for site alias file configuration.
+فهرستی از گزینه‌های معتبر به صورت کلید/مقدار برای پیکربندی فایل نام مستعار سایت به صورت زیر است.
  
-* **root**: Drupal root project directory.
-* **host**: Domain name of the remote system. Not required on local sites.
-* **port**: The port to use when connecting via ssh. The port 22 used by default. 
-* **user**: The username to use when connecting via ssh.
-* **options**: Array of valid DrupalConsole options.
-* **arguments**: Array of valid DrupalConsole arguments.
-* **extra-options**: Used only when the target requires extra options, such as alternative authentication method and/or alternative identity file. 
-* **type**: Type of site to interact with. Allowed options `local`, `ssh`, `container`. The `local` option is used by default.
+* **root**: دایرکتوری اصلی پروژه دروپال.
+* **host**: نام دامنه سیستم راه‌دور، که در مورد سایت‌های محلی مورد نیاز نیست.
+* **port**: درگاهی که هنگام اتصال از طریق ssh استفاده می‌شود، معمولا شماره ۲۲.
+* **user**: نام کاربری که هنگام اتصال از طریق ssh بکار می‌رود.
+* **options**: آرایه‌ای از گزینه‌های معتبر DrupalConsole.
+* **arguments**: آرایه‌ای از آرگومان‌های معتبر DrupalConsole.
+* **extra-options**: تنها زمانی که سیستم هدف به گزینه‌های اضافی نیاز داشته باشد بکار می‌رود، از جمله شیوه جایگزین احراز هویت یا فایل شناسه جداگانه.
+* **type**: نوع سایت برای تعامل. گزینه‌های مجاز عبارتند از `local`، `ssh` و `container`. گزینه `local` به صورت پیشفرض استفاده می‌شود.
 
-**NOTE:**: The values `root` and `type` are required.
+**یادداشت:** مقادیر `root` و `type` اجباری هستند.
