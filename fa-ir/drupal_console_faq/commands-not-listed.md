@@ -1,4 +1,4 @@
-# Commands not listed
-This document is a work-in-progress. At any time, it is possible that the Drupal Console project is ahead of the documentation. While we endeavor to keep this book up-to-date, it is always possible that some commands have been created for the Drupal Console, but are not yet described in this document. For a full list of supported commands, use the **list** command, e.g. `drupal list`
+# دستوراتی که فهرست نشده‌اند
+این سند یک کار در حال پیشرفت است. در هر زمان این احتمال وجود دارد که پروژه کنسول دروپال از مستندات فنی آن جلوتر باشد. با اینکه تلاش ما بر بروزنگاه‌داشتن این کتاب است، همیشه این احتمال وجود دارد که برخی دستورات در کنسول دروپال موجود باشند که در این کتاب به آن‌ها اشاره‌ای نشده است. برای مشاهده فهرست کامل دستورات، از `drupal list` استفاده کنید.
 
-If you see a command that is not yet described here, you are also welcome to [contribute to this documentation](../contributing/contributing-to-the-book.md "Contribute to the Drupal Console documentation"), using the **--help** output for the command as a simple starting point.
+اگر دستوری را مشاهده می‌کنید که هم اکنون در این کتاب قرار ندارد، بسیار خوشحال می‌شویم که در [این مستندات مشارکت کنید](../contributing/contributing-to-the-book.md ). استفاده از خروجی **--help** برای دستور می‌تواند نقطه آغاز مناسبی باشد.

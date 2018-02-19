@@ -1,3 +1,3 @@
-# Permissions
+# مجوزها
 
-To be added.
+افزوده خواهد شد.

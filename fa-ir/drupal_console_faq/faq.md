@@ -1,9 +1,8 @@
-# FAQ (Frequently Asked Questions) about DrupalConsole
+# پرسش‌های متداول درباره DrupalConsole
 
-Having some trouble with DrupalConsole? These questions and answers are a good place to start. 
-FAQs are categorized into the following types of issues: 
+با DrupalConsole دچار مشکل شده‌اید؟ این پرسش‌ها و پاسخ‌ها مکان خوبی برای شروع هستند. پرسش‌های متداول در طبقه‌بندی‌های زیر قرار گرفته‌اند:
 
-* [Installation problems](./installation-problems.md)
-* [Permissions](./permissions.md)
-* [Commands not listed](./commands-not-listed.md)
-* [Interactive Mode](./interactive-mode.md)
+* [مشکلات نصب](./installation-problems.md)
+* [مجوزها](./permissions.md)
+* [دستوراتی که فهرست نشده‌اند](./commands-not-listed.md)
+* [حالت تعاملی](./interactive-mode.md)

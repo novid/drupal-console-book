@@ -1,3 +1,3 @@
-# Interactive Mode
+# حالت تعاملی
 
-To be added.
+افزوده خواهد شد.

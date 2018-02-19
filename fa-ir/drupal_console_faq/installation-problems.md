@@ -1,65 +1,63 @@
-# Installation problems 
+# مشکلات نصب
 
-When you run DrupalConsole from your Drupal 8 root directory, you can get different error messages, we will try to compile the reported issues and how to have them fixed.
+زمانی که DrupalConsole را از دایرکتوری دروپال ۸ خود اجرا می‌کنید، ممکن است پیام‌های خطای گوناگونی دریافت کنید. در این قسمت سعی می‌کنیم که متداول‌ترین این پیام‌ها همراه با جواب را به شما نشان دهیم.
 
 --- 
 
-### Error message:
+### پیام خطا:
 ```
 [PDOException] SQLSTATE[HY000] [2002] No such file or directory
 ```
-You will need to edit your 'host' in your 'settings.php' file. 
+شما باید گزینه 'host' در فایل 'settings.php' را ویرایش کنید.
 
-Navigate to `sites/default/settings.php`. In your `settings.php` file, change the `host` to read:
+به مسیر `sites/default/settings.php` بروید. در فایل `settings.php` خود، مقدار `host` را به شکل زیر تغییر دهید:
 ```
 'host' => '127.0.0.1'
 ```
-or if your 'settings.php' file already reads:
+یا اگر فایل 'settings.php' دارای مقدار زیر است:
 ```
 'host' => '127.0.0.1'
 ```
-change it to read:
+آن را به مقدار زیر تغییر دهید:
 ```
 'host' => 'localhost'. 
 ```
-After you make the change, be sure to save the file and then run DrupalConsole again.
+پس از اینکه تغییر ایجاد شد، اطمینان یابید که فایل ذخیره‌سازی شده است و دوباره DrupalConsole را اجرا نمایید.
 
 ---
 
-### Error message:
+### پیام خطا:
 ```
 [PDOException]
 SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/tmp/mysql.sock'
 ```
-Creating a symlink pointing to `/tmp/mysql.sock`:
+ایجاد یک پیوند نمادین که به `/tmp/mysql.sock` اشاره می‌کند:
 ```
 ln -s /path/to/your/mysql/data/mysql.sock /tmp/mysql.sock
 ```
 
 ---
 
-### Error message:
+### پیام خطا:
 ```
 Fatal error: require(): Failed opening required 'drupal.php'
 ```
-This can be caused by the ioncube loader extension, which can be used to encode
-and decode PHP files. This extension prevents normal working of any phar files
-with require/include calls. You must disable the extension.
+این خطا می‌تواند توسط افزونه ioncube ایجاد شود، که برای کدگذاری و کدگشایی فایل‌های PHP استفاده می‌شود. این افزونه عملکرد عادی تمام فایل‌های phar که شامل فراخوانی‌های require/include باشند را مختل می‌کند. شما باید این افزونه را غیرفعال کنید.
 
 ---
 
-### Warning message:
+### پیام اخطار:
 ```
 The configuration date.timezone was missing and overwritten with America/Tijuana.
 ```
-Your timezone is not set in php.ini; you must correct this by editing the appropriate php.ini for the command line (there's a separate php.ini for the CLI). 
+منطقه زمانی شما در فایل php.ini تنظیم نشده است؛ شما باید این مشکل را با ویرایش فایل موجود برطرف کنید (یک فایل php.ini جداگانه برای CLI نیز وجود دارد).
 
-Run `php --ini`and look for "Loaded Configuration File". For example, in Ubuntu: 
+دستور `php --ini` را اجرا کرده و به دنبال "Loaded Configuration File" بگردید. برای نمونه، در اوبونتو:
 ```
 Loaded Configuration File:         /etc/php5/cli/php.ini
 ```
-Edit that file and look for 
+این فایل را ویرایش کرده و به دنبال عبارت زیر بگردید:
 ```
 ;date.timezone =
 ```
-Uncomment this line and assign the desired timezone as seen on http://php.net/manual/en/timezones.php. 
+این خط را از حالت غیرفعال خارج کرده و منطقه زمانی مناسب خود را از http://php.net/manual/en/timezones.php پیدا کنید.
