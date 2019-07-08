@@ -49,12 +49,12 @@ drupal develop:create:symlinks \
 
 ## دانلود زبان یا بسته‌های اضافی کنسول دروپال
 
-اگر می‌خواهید که در ترجمه کنسول دروپال به [اسپانیایی](https://github.com/hechoendrupal/drupal-console-es) مشارکت کنید باید:
+اگر می‌خواهید که در ترجمه کنسول دروپال به [فارسی](https://github.com/hechoendrupal/drupal-console-fa) مشارکت کنید باید:
 
 ۱.- آن را روی سایت دروپالی با اجرای دستور زیر دانلود کنید.
 
 ```
-composer require drupal/console-es
+composer require drupal/console-fa
 ```
 
 ۲.- مخزن مورد نظر را درون سیستم محلی خود fork و clone کنید.

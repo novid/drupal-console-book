@@ -14,7 +14,7 @@
         
 زبان‌ها نیز درون مخازن جداگانه قرار می‌گیرند:
 * [drupal-console-en](https://github.com/hechoendrupal/drupal-console-en)
-* [drupal-console-es](https://github.com/hechoendrupal/drupal-console-es)
+* [drupal-console-fa](https://github.com/hechoendrupal/drupal-console-fa)
 
 ## Fork
 مخازنی که قصد مشارکت در آن‌ها را دارید باید fork کنید. اینکار از رایط گرافیکی گیت‌هاب قابل انجام است.

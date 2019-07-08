@@ -20,16 +20,6 @@ drupal self-update
 drupal
 ```
 
-## نصب راه‌انداز کنسول دروپال با استفاده از Composer
-پیکربندی‌های `minimum-stability` و `prefer-stable` را تنظیم کنید.
-```
-composer global config minimum-stability dev
-composer global config prefer-stable true
-```
-```
-composer global require drupal/console-launcher:~1.0
-```
-
 بایستی فایل راه‌انداز را از درون یک سایت دروپالی اجرا کنید یا اینکه از گزینه `--root=/path/to/drupal8.dev` برای مشخص کردن مسیر دروپال بهره بگیرید.
 
 **یادداشت:** `drupal` فقط یک نام مستعار است و شما می‌توانید آن را به هر چه می‌خواهید تغییر دهید.

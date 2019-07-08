@@ -38,7 +38,7 @@ Generated or updated files
  3 - modules/custom/example/console/translations/en/example.default.yml
 ```
 
-اجرای `generate:command` و ارسال گزینه‌های خط-فرمان، اطمینان یابید که دستور زیر مبتنی بر نیازمندی شما تنظیم شود.
+اجرای `generate:command` و ارسال گزینه‌های خط فرمان، اطمینان یابید که دستور زیر مبتنی بر نیازمندی شما تنظیم شود.
 ```
 drupal generate:command \
 --extension="example" \
