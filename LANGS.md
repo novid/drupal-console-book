@@ -11,8 +11,5 @@
 * [pусский язык](ru)
 * [Vietnamese](vn)
 * [简体中文](zh-hans)
-<<<<<<< HEAD
 * [繁體中文](zh-hant)
 * [Persian] (fa-ir)
-=======
->>>>>>> upstream/master
