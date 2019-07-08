@@ -5,16 +5,21 @@ Retourne une url de connection à validité unique pour un utilisateur.
 ```
 drupal user:login:url [arguments]
 ulu
-uslu
+usli
+uli
 ```
 
 ## Available arguments
 Argument | Details
 ---------|-------------
-user-id | Identifiant de l'utilisateur
+user | User name/id.
 
 ## Examples
 * Get one time login url for user id 1
 ```
 drupal user:login:url  1
+```
+* Get one time login url for username jmolivas
+```
+drupal user:login:url jmolivas
 ```

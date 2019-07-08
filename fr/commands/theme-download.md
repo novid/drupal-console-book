@@ -5,7 +5,6 @@ Télécharge un thème dans l'application
 ```
 drupal theme:download [arguments] [options]
 thd
-td
 ```
 
 ## Available options

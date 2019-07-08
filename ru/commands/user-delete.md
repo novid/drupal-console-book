@@ -1,27 +1,32 @@
 # user:delete
-Delete users for the application
+Удалить пользователей из приложения
 
-**Usage:**
+**Использование:**
 ```
 drupal user:delete [options]
 ud
 ```
 
-## Available options
-Option | Details
+## Доступные параметры
+Команда | Детали
 -------|-------------
---user-id | User id to be deleted
---roles | Roles associated to users to be deleted
+--user | User name/id to be deleted
+--roles | Пользователи с данной ролью будут удалены
 
-## Examples
-* Delete user specifying the id and the user role
+## Примеры
+* Удалить пользователя с идентефикатором 2 с ролью authenticated
 ```
 drupal user:delete  \
   --user-id="2"
   --roles='authenticated'
 ```
-* Delete user specifying its id
+* Удалить пользователя с идентефикатором 3
 ```
 drupal user:delete  \
   --user-id="3"
+```
+* Delete users with the role "authenticated"
+```
+drupal user:delete  \
+  --role="authenticated"
 ```

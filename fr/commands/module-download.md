@@ -5,7 +5,6 @@ Télécharge le module ou les modules dans l'application
 ```
 drupal module:download [arguments] [options]
 mod
-md
 ```
 
 ## Available options
@@ -14,7 +13,7 @@ Option | Details
 --path | Le chemin du projet contrib
 --latest | Valeur par défaut qui télécharge la version la plus récente
 --composer | Télécharge le module via Composer
---unstable | commands.module.install.options.unstable
+--unstable | Module unstable
 
 ## Available arguments
 Argument | Details

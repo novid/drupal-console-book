@@ -3,8 +3,8 @@ Generar una entitat de contingut
 
 **Ús:**
 ```
-$ drupal generate:entity:content [options]
-$ gect  
+drupal generate:entity:content [options]
+geco
 ```
 
 ## Opcions disponibles
@@ -17,3 +17,26 @@ Opció | Detalls
 --label | Etiqueta
 --has-bundles | L'entitat conté bundles
 --is-translatable | Content entity translatable
+--revisionable | commands.generate.entity.content.options.revisionable
+
+## Exemples
+* Generate a content entity specifying the module, the entity class, the entity name, its path and label
+```
+drupal generate:entity:content  \
+  --module="modulename"  \
+  --entity-class="DefaultEntity"  \
+  --entity-name="default_entity"  \
+  --base-path="/admin/structure"  \
+  --label="Default entity"
+```
+* Generate a translatable and revisionable content entity specifying the module, the entity class, the entity name, its path and label
+```
+drupal generate:entity:content  \
+  --module="modulename"  \
+  --entity-class="DefaultEntity"  \
+  --entity-name="default_entity"  \
+  --base-path="/admin/structure"  \
+  --label="Default entity"  \
+  --is-translatable  \
+  --revisionable
+```

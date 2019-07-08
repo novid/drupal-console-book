@@ -5,6 +5,7 @@ Lancer une base de donnée client si disponible
 ```
 drupal database:connect [arguments]
 dbco
+sqlc
 ```
 
 ## Available arguments

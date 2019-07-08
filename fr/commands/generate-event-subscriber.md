@@ -11,8 +11,8 @@ ges
 Option | Details
 -------|-------------
 --module | Le nom du module.
---name | commands.generate.service.options.name
---class | Nom de la classe
+--name | Service name
+--class | Class name
 --events | Charger des événements depuis le conteneur.
 --services | Charger des services depuis le conteneur.
 

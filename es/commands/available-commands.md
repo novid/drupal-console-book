@@ -8,6 +8,7 @@ Comando de Drupal Console | Detalles
 [about](about.md) | Muestra información básica sobre el proyecto Drupal Console
 [chain](chain.md) | Ejecución de comandos en secuencia
 [check](check.md) | Comprobador de requisitos del sistema
+[composerize](composerize.md) | Convierte código base de Drupal a Composer.
 [exec](exec.md) | Ejecutar un comando externo.
 [help](help.md) | Muestra ayuda para un comando dado
 [init](init.md) | Copia los archivos de configuración al directorio home del usuario.
@@ -60,20 +61,24 @@ Comando de Drupal Console | Detalles
 [debug:cron](debug-cron.md) | Listado de módulos que implementan el hook cron
 [debug:database:log](debug-database-log.md) | Muestra los eventos de log actuales de la aplicación
 [debug:database:table](debug-database-table.md) | Muestra todas las tablas de una base de datos dada.
+[debug:dotenv](debug-dotenv.md) | Debug Dotenv debug values.
 [debug:entity](debug-entity.md) | Debugea entidades disponibles en el sistema
 [debug:event](debug-event.md) | Muestra los eventos actuales
 [debug:image:styles](debug-image-styles.md) | Lista los estilos de imagen en el sitio
 [debug:libraries](debug-libraries.md) | Muestra las librerías disponibles en la aplicación
+[debug:migrate](debug-migrate.md) | Muestra la migración actual disponible para la aplicación
 [debug:module](debug-module.md) | Muestra los módulos actualmente disponibles para la aplicación
 [debug:multisite](debug-multisite.md) | Lista todos los multisios disponibles en el sitio
 [debug:permission](debug-permission.md) | Muestra todos los permisos y además lista todos los permisos de un especifico rol de usuario.
 [debug:plugin](debug-plugin.md) | Muestra todos los tipos de plugins.
 [debug:queue](debug-queue.md) | Muestra las colas de su aplicación
+[debug:rest](debug-rest.md) | Muestra el actual recurso rest para la aplicación
 [debug:roles](debug-roles.md) | Muestra los roles actuales de la aplicación
 [debug:router](debug-router.md) | Muestra las rutas actuales de la aplicación o la información detallada de una ruta en particular
 [debug:settings](debug-settings.md) | Ofrece un listado de la configuración de usuario de Drupal Console.
 [debug:site](debug-site.md) | Lista todos los sitios conocidos locales y remotos.
 [debug:state](debug-state.md) | Muestra las claves de Estado actual.
+[debug:test](debug-test.md) | Ofrece un listado de Tests Unitarios disponibles en la aplicación.
 [debug:theme](debug-theme.md) | Muestra los temas actuales en la aplicación.
 [debug:theme:keys](debug-theme-keys.md) | Muestra todas las claves del tema que proveen las funciones del hook hook_theme
 [debug:update](debug-update.md) | Muestra las actualizaciones disponibles
@@ -82,28 +87,16 @@ Comando de Drupal Console | Detalles
 [debug:views:plugins](debug-views-plugins.md) | Muestra los plugins de vistas existentes del sitio
 **devel**  |
 [devel:dumper](devel-dumper.md) | commands.devel.dumper.messages.change-devel-dumper-plugin
-**develop**  |
-[develop:contribute](develop-contribute.md) | Download Drupal + Drupal Console to contribute.
-[develop:create:symlinks](develop-create-symlinks.md) | Create symlinks between Drupal site and cloned repositories.
-[develop:doc:cheatsheet](develop-doc-cheatsheet.md) | Genera un cheatsheet imprimible de los comandos disponibles. Es necesario el siguiente comando previamente: composer require knplabs/knp-snappy
-[develop:doc:dash](develop-doc-dash.md) | Generar el paquete DrupalConsole.docset para Dash
-[develop:doc:data](develop-doc-data.md) | Genera documentación para los comandos.
-[develop:doc:gitbook](develop-doc-gitbook.md) | Generar documentaciones para Comandos
-[develop:example](develop-example.md) | 
-[develop:example:container:aware](develop-example-container-aware.md) | 
-[develop:translation:cleanup](develop-translation-cleanup.md) | Hacer limpieza de ficheros de traducción
-[develop:translation:pending](develop-translation-pending.md) | Determina cadenas de traducción pendientes en un idioma o en un archivo específico de un idioma
-[develop:translation:stats](develop-translation-stats.md) | Genera estadísticas de traducción
-[develop:translation:sync](develop-translation-sync.md) | Sincronizar archivos de traducción
-[develop:update:code](develop-update-code.md) | Update code
+**docker**  |
+[docker:init](docker-init.md) | Crea un archivo docker-compose.yml
 **dotenv**  |
-[dotenv:debug](dotenv-debug.md) | Debug Dotenv debug values.
-[dotenv:init](dotenv-init.md) | Dotenv initializer.
+[dotenv:init](dotenv-init.md) | Añade soporte y la configuración requerida para trabajar con un archivo .env
 **entity**  |
 [entity:delete](entity-delete.md) | Elimina una entidad específica
 **field**  |
 [field:info](field-info.md) | Muestra información sobre los campos.
 **generate**  |
+[generate:ajax:command](generate-ajax-command.md) | Generar y registrar un comando ajax personalizado
 [generate:authentication:provider](generate-authentication-provider.md) | Generar un Proveedor de Autenticación
 [generate:breakpoint](generate-breakpoint.md) | Genera un breakpoint
 [generate:cache:context](generate-cache-context.md) | Genera un contexto de caché
@@ -113,9 +106,9 @@ Comando de Drupal Console | Detalles
 [generate:entity:config](generate-entity-config.md) | Generar una nueva entidad de configuración
 [generate:entity:content](generate-entity-content.md) | Generar una nueva entidad de contenido
 [generate:event:subscriber](generate-event-subscriber.md) | Genera un suscriptor de eventos
-[generate:form](generate-form.md) | Genera un nuevo "%s"
+[generate:form](generate-form.md) | Genera un nuevo "FormBase"
 [generate:form:alter](generate-form-alter.md) | Genera una implementación de hook_form_alter() o hook_form_FORM_ID_alter
-[generate:form:config](generate-form-config.md) | commands.generate.form.description
+[generate:form:config](generate-form-config.md) | Genera un nuevo "ConfigFormBase"
 [generate:help](generate-help.md) | Genera una implementación de hook_help()
 [generate:jstest](generate-jstest.md) | Genera un test Javascript.
 [generate:module](generate-module.md) | Generar un módulo.
@@ -134,7 +127,7 @@ Comando de Drupal Console | Detalles
 [generate:plugin:migrate:process](generate-plugin-migrate-process.md) | Genera un plugin de proceso para migración
 [generate:plugin:migrate:source](generate-plugin-migrate-source.md) | Genera un plugin de migración de fuentes
 [generate:plugin:rest:resource](generate-plugin-rest-resource.md) | Genera un plugin de recurso rest
-[generate:plugin:rulesaction](generate-plugin-rulesaction.md) | Genera un plugin de acción de rules
+[generate:plugin:rulesaction](generate-plugin-rulesaction.md) | commands.generate.plugin.rulesaction.description
 [generate:plugin:skeleton](generate-plugin-skeleton.md) | Generar una implementación de un esqueleto de plugin para esos plugins de Drupal Console que no tienen un generador específico
 [generate:plugin:type:annotation](generate-plugin-type-annotation.md) | Genera un tipo de plugin con descubrimiento de anotaciones
 [generate:plugin:type:yaml](generate-plugin-type-yaml.md) | Genera un tipo de plugin con descubrimiento YAML
@@ -143,6 +136,7 @@ Comando de Drupal Console | Detalles
 [generate:profile](generate-profile.md) | Genera un perfil.
 [generate:routesubscriber](generate-routesubscriber.md) | Generar un RouteSubscriber
 [generate:service](generate-service.md) | Genera un servicio
+[generate:site:alias](generate-site-alias.md) | Genera un alias del sitio.
 [generate:theme](generate-theme.md) | Genera un tema.
 [generate:twig:extension](generate-twig-extension.md) | Generar una extensión de Twig.
 [generate:update](generate-update.md) | Generar una implementación de hook_update_N()
@@ -152,6 +146,10 @@ Comando de Drupal Console | Detalles
 [locale:language:add](locale-language-add.md) | Añadir un idioma que sea soportado en el sitio
 [locale:language:delete](locale-language-delete.md) | Eliminar un idioma soportado en el sitio
 [locale:translation:status](locale-translation-status.md) | Lista de traducciones disponibles actualizadas
+**migrate**  |
+[migrate:execute](migrate-execute.md) | Ejecuta una migración que esté disponible para la aplicación
+[migrate:rollback](migrate-rollback.md) | Revertir una o múltiples migraciones
+[migrate:setup](migrate-setup.md) | Cargar y crear las migraciones pertinentes para una base de datos heredada
 **module**  |
 [module:dependency:install](module-dependency-install.md) | Instalar las dependencias de módulos en la aplicación
 [module:download](module-download.md) | Descarga un módulo o varios en la aplicación
@@ -166,8 +164,9 @@ Comando de Drupal Console | Detalles
 [node:access:rebuild](node-access-rebuild.md) | Reconstruir los permisos de acceso a nodos. La reconstrucción eliminará todos los privilegios al contenudo y los reemplazará con permisos basado en los módulos y configuración actual,
 **queue**  |
 [queue:run](queue-run.md) | Procesa la cola seleccionada.
-**quick**  |
-[quick:start](quick-start.md) | Download, install and serve a new Drupal project
+**rest**  |
+[rest:disable](rest-disable.md) | Deshabilita un recurso rest en la aplicación
+[rest:enable](rest-enable.md) | Habilita un recurso rest para la aplicación
 **role**  |
 [role:delete](role-delete.md) | Eleminar roles en la aplicación
 [role:new](role-new.md) | Crea roles para la aplicación
@@ -180,7 +179,6 @@ Comando de Drupal Console | Detalles
 [site:install](site-install.md) | Instala un proyecto Drupal
 [site:maintenance](site-maintenance.md) | Poner el sitio en modo mantenimiento
 [site:mode](site-mode.md) | Cambiar la configuración de rendimiento del sistema
-[site:new](site-new.md) | Download a new Drupal project
 [site:statistics](site-statistics.md) | Muestra las estadísticas actuales del sitio web.
 [site:status](site-status.md) | Ver el estatus de la instalación actual de Drupal
 **state**  |
@@ -188,16 +186,16 @@ Comando de Drupal Console | Detalles
 [state:override](state-override.md) | Sobreescribir una clave de Estado.
 **taxonomy**  |
 [taxonomy:term:delete](taxonomy-term-delete.md) | Eliminar términos de una taxonomía de un vocabulario
+**test**  |
+[test:run](test-run.md) | Ejecuta un test unitario de los disponibles en la aplicación
 **theme**  |
 [theme:download](theme-download.md) | Descarga un tema para la aplicación
 [theme:install](theme-install.md) | Instalar tema o temas en la aplicación
 [theme:path](theme-path.md) | Devuelve la ruta relativa al tema (o ruta absoluta)
 [theme:uninstall](theme-uninstall.md) | Desinstalar tema o temas en la aplicación
 **update**  |
-[update:command:data](update-command-data.md) | Update gitbook
 [update:entities](update-entities.md) | Aplicar actualizaciones a entidades
 [update:execute](update-execute.md) | Ejecuta una función específica de Actualizar N dentro de un módulo, o ejecutarlos todos
-[update:gitbook](update-gitbook.md) | Update gitbook
 **user**  |
 [user:create](user-create.md) | Crea usuarios en el sitio
 [user:delete](user-delete.md) | Eliminar usuarios del sitio

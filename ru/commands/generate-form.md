@@ -1,29 +1,29 @@
 # generate:form
-Генерировать новую "%s"
+Generate a new "FormBase"
 
-**Usage:**
+**Использование:**
 ```
 drupal generate:form [options]
 gf
 ```
 
-## Available options
-Option | Details
+## Доступные параметры
+Команда | Детали
 -------|-------------
---module | Имя модуля.
---class | Название класса формы
---form-id | Идентификатор формы
---services | Загрузка сервисов из контейнера.
+--module | The Module name.
+--class | The form class name
+--form-id | The Form id
+--services | Load services from the container.
 --config-file | Add a config file
---inputs | Создание полей ввода в форме.
+--inputs | Create inputs in a form.
 --path | Enter the form path
 --menu-link-gen | Generate a menu link
 --menu-link-title | A title for the menu link
 --menu-parent | Menu parent
 --menu-link-desc | A description for the menu link
 
-## Examples
-* Generate an empty form with config file specifying the module name, the class, a form id and the path
+## Примеры
+* Генерирует пустую форму с config файлом по имени модуля, классу, ID формы и пути
 ```
 drupal generate:form  \
   --module="modulename"  \
@@ -32,7 +32,7 @@ drupal generate:form  \
   --config-file  \
   --path="/modulename/form/default"
 ```
-* Generate a form with 2 fields and a config file specifying the module name, the class, a form id, the inputs and the path
+* Генерирует форму с двумя полями и config файлом по имени модуля, классу, ID формы, введенным полям и пути
 ```
 drupal generate:form  \
   --module="modulename"  \

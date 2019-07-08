@@ -5,7 +5,6 @@ Génère un plugin de condition.
 ```
 drupal generate:plugin:condition [options]
 gpco
-gpc
 ```
 
 ## Available options

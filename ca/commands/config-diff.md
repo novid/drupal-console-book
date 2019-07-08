@@ -3,7 +3,8 @@ Sortida dels elements de configuració diferents a la configuració activa compa
 
 **Ús:**
 ```
-$ drupal config:diff [arguments] [options]
+drupal config:diff [arguments] [options]
+cdi
 ```
 
 ## Opcions disponibles
@@ -15,3 +16,9 @@ Opció | Detalls
 Argument | Detalls
 ---------|-------------
 directory | Directori amb el que comparar. Si s'omet, es tria des dels directoris de configuració de Drupal.
+
+## Exemples
+* Provide a config directory
+```
+drupal config:diff ../config/path
+```

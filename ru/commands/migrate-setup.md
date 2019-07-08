@@ -1,14 +1,14 @@
 # migrate:setup
 Загрузить и создать соответствующие миграции для предоставленной устаревшой базы данных
 
-**Usage:**
+**Использование:**
 ```
 drupal migrate:setup [options]
 mis
 ```
 
-## Available options
-Option | Details
+## Доступные параметры
+Команда | Детали
 -------|-------------
 --db-type | Тип базы данных Drupal
 --db-host | Хост базы данных
@@ -17,4 +17,4 @@ Option | Details
 --db-pass | Пароль базы данных
 --db-prefix | Префикс базы данных
 --db-port | Порт базы данных
---source-base_path | commands.migrate.setup.options.source-base-path
+--source-base_path | Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)

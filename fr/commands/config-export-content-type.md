@@ -12,6 +12,8 @@ Option | Details
 -------|-------------
 --module | Le nom du module.
 --optional-config | Export du type de contenu dans votre module sous la forme d'un fichier YAML de configuration optionnelle
+--remove-uuid | If set, the configuration will be exported without uuid key.
+--remove-config-hash | If set, the configuration will be exported without the default site hash key.
 
 ## Available arguments
 Argument | Details

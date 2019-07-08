@@ -3,6 +3,13 @@ Reconstruir rutes per l'aplicació
 
 **Ús:**
 ```
-$ drupal router:rebuild
-$ ror  
+drupal router:rebuild
+rr
+ror
+```
+
+## Exemples
+* Rebuild routes
+```
+drupal router:rebuild
 ```

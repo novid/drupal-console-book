@@ -5,6 +5,7 @@ Affiche les mises à jour actuellement disponibles pour l'application
 ```
 drupal debug:update
 du
+upd
 ```
 
 ## Examples

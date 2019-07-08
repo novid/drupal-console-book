@@ -3,7 +3,8 @@ Import/Configure an existing local Drupal project
 
 **Ús:**
 ```
-$ drupal site:import:local [arguments] [options]
+drupal site:import:local [arguments] [options]
+sil
 ```
 
 ## Opcions disponibles
@@ -16,3 +17,9 @@ Argument | Detalls
 ---------|-------------
 name | Name that will be used to generate the site config
 directory | Existing Drupal root directory
+
+## Exemples
+* Import local drupal project specifying the site name and the path
+```
+drupal site:import:local  SiteName /private/var/www/vhost/anexusit/drupal8.dev/web
+```

@@ -5,6 +5,7 @@ Affiche les entrées courantes du journal pour l'application
 ```
 drupal debug:database:log [arguments] [options]
 dbb
+ws
 ```
 
 ## Available options

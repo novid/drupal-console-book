@@ -5,7 +5,6 @@ Installe un ou plusieurs thèmes dans l'application
 ```
 drupal theme:install [arguments] [options]
 thi
-ti
 ```
 
 ## Available options
@@ -16,7 +15,7 @@ Option | Details
 ## Available arguments
 Argument | Details
 ---------|-------------
-theme | commands.theme.install.options.module
+theme | Le ou les thèmes à activer doivent être séparés par des virgules
 
 ## Examples
 * Install theme specifying the name

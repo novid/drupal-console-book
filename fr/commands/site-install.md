@@ -10,21 +10,21 @@ si
 ## Available options
 Option | Details
 -------|-------------
---langcode | commands.site.install.options.langcode
---db-type | commands.site.install.options.db-type
---db-file | commands.site.install.options.db-file
+--langcode | Langue Drupal
+--db-type | Type de base de données à utiliser lors de l'installation
+--db-file | Fichier de base de données Drupal à utiliser lors de l'installation
 --db-host | Serveur de la base de données
 --db-name | Nom de la base de données
 --db-user | Utilisateur de la base de données
 --db-pass | Mot de passe de la base de données
 --db-prefix | Préfixe de la base de données
 --db-port | Port de la base de données
---site-name | commands.site.install.options.site-name
---site-mail | commands.site.install.options.site-mail
---account-name | commands.site.install.options.account-name
---account-mail | commands.site.install.options.account-mail
---account-pass | commands.site.install.options.account-pass
---force | commands.site.install.options.force
+--site-name | Nom du site Drupal
+--site-mail | Courriel du site Drupal
+--account-name | Nom du compte administrateur Drupal
+--account-mail | Courriel du compte administrateur Drupal
+--account-pass | Mot de passe du compte administrateur Drupal
+--force | Force to reinstall the site
 
 ## Available arguments
 Argument | Details

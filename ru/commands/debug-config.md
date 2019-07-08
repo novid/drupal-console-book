@@ -1,19 +1,24 @@
 # debug:config
 Показывает текущую конфигурацию.
 
-**Usage:**
+**Использование:**
 ```
-drupal debug:config [arguments]
+drupal debug:config [arguments] [options]
 dc
 ```
 
-## Available arguments
-Argument | Details
+## Доступные параметры
+Команда | Детали
+-------|-------------
+--show-overridden | Show overridden configurations.
+
+## Доступные аргументы
+Аргумент | Детали
 ---------|-------------
 name | Имя конфигурации.
 
-## Examples
-* List all configuration object names.
+## Примеры
+* Отображает все имена объектов конфигурации.
 ```
 drupal config:debug
 ```
@@ -21,7 +26,11 @@ drupal config:debug
 ```
 drupal config:debug system.site
 ```
-* List all system configuration names.
+* Выводит все имена кофигурации содержащие system.
 ```
 drupal config:debug | grep system
+```
+* List all configuration including overridden values.
+```
+drupal debug:config --show-overridden
 ```

@@ -1,25 +1,27 @@
 # generate:command
-Generate commands for the console.
+Сгенерировать команды для консоли.
 
-**Usage:**
+**Использование:**
 ```
 drupal generate:command [options]
 gco
-gcm
 ```
 
-## Available options
-Option | Details
+## Доступные параметры
+Команда | Детали
 -------|-------------
---extension | The extension name.
---extension-type | The extension type.
---class | The Class that describes the command. (Must end with the word 'Commmand').
---name | The Command name.
---container-aware | Is the command aware of the drupal site installation when executed
+--extension | Имя расширения.
+--extension-type | Тип расширения.
+--class | Имя класса, описывающего команду. (Должно оканчиваться словом 'Commmand').
+--name | Имя команды.
+--initialize | Add initialize method.
+--interact | Add interact method.
+--container-aware | Команда знает о исталяции Drupal сайта, когда извлекается
 --services | Загрузка сервисов из контейнера.
+--generator | Add a Generator class for this command.
 
-## Examples
-* Generate a command specifying the extension name and type, its class and the name.
+## Примеры
+* Генерирует команду по имени и типу расширения, классу и имени
 ```
 drupal generate:command  \
   --extension="ExtensionName"  \

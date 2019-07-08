@@ -5,6 +5,7 @@ Prépare les fichiers pour une nouvelle installation multi-sites.
 ```
 drupal multisite:new [arguments] [options]
 mun
+sn
 ```
 
 ## Available options

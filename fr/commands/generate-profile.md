@@ -12,10 +12,11 @@ Option | Details
 -------|-------------
 --profile | Le nom du profil
 --machine-name | Le nom machine (uniquement minuscules ou underscore)
+--profile-path | The path of the profile
 --description | Description du profil
 --core | Version du core
 --dependencies | Dépendances du module séparées par des virgules (i.e. context, panels)
---themes | commands.generate.profile.options.themes
+--themes | the theme name
 --distribution | Le nom de la distribution
 
 ## Examples

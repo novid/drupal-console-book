@@ -10,14 +10,14 @@ gt
 ## Available options
 Option | Details
 -------|-------------
---theme | commands.generate.theme.options.module
+--theme | Le nom du thème
 --machine-name | Le nom machine (minuscules et underscore seulement)
---theme-path | commands.generate.theme.options.module-path
+--theme-path | Le chemin du thème
 --description | Description du thème
 --core | Version du cœur
 --package | Package du thème
 --global-library | Nom de la librairie de styles globale
---libraries | commands.generate.theme.options.libraries
+--libraries | Libraries
 --base-theme | Thème de base (i.e. classy, stable)
 --regions | Régions
 --breakpoints | Breakpoints

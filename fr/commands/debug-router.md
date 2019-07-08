@@ -5,6 +5,7 @@ Affiche les routes de l'application
 ```
 drupal debug:router [arguments]
 dr
+rod
 ```
 
 ## Available arguments

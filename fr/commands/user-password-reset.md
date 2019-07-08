@@ -5,17 +5,21 @@ Réinitialise le mot de passe pour un utilisateur spécifique.
 ```
 drupal user:password:reset [arguments]
 upr
-uspr
+upsr
 ```
 
 ## Available arguments
 Argument | Details
 ---------|-------------
-user | ID de l'utilisateur
+user | User name/id
 password | Mot de passe au format texte
 
 ## Examples
 * Update password specifying the user id and the new password
 ```
 drupal user:password:reset  2 p455w0rd
+```
+* Update password specifying the user jmolivas and the new password
+```
+drupal user:password:reset jmolivas p455w0rd
 ```

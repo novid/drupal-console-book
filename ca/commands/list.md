@@ -3,7 +3,7 @@ Llistar tots els comandaments disponibles
 
 **Ús:**
 ```
-$ drupal list [arguments] [options]
+drupal list [arguments] [options]
 ```
 
 ## Opcions disponibles

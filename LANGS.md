@@ -2,18 +2,17 @@
 * [Español](es)
 * [Català](ca)
 * [Français](fr)
-* [Hindi](hi)
+* [हिन्दी](hi)
 * [Magyar](hu)
-* [Bahasa Indonesia](id)
 * [日本語](ja)
-* [한국어](ko)
 * [मराठी](mr)
-* [ਪੰਜਾਬੀ](pa)
 * [Português brasileiro](pt-br)
 * [Romanian](ro)
 * [pусский язык](ru)
-* [Tagalog](tl)
 * [Vietnamese](vn)
 * [简体中文](zh-hans)
+<<<<<<< HEAD
 * [繁體中文](zh-hant)
 * [Persian] (fa-ir)
+=======
+>>>>>>> upstream/master

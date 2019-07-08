@@ -5,7 +5,6 @@ Désactive une ressource Rest dans l'application
 ```
 drupal rest:disable [arguments]
 red
-redi
 ```
 
 ## Available arguments

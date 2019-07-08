@@ -1,21 +1,25 @@
 # update:execute
-Выполнить конкретный update_N хук в модуле или выполнить все
+Выполнить указанный update_N хук в модуле или выполнить все
 
-**Usage:**
+**Использование:**
 ```
 drupal update:execute [arguments]
 upex
-upe
+updb
 ```
 
-## Available arguments
-Argument | Details
+## Доступные аргументы
+Аргумент | Детали
 ---------|-------------
 module | Имя модуля.
-update-n | Конкретный update_N хук будет выполнен
+update-n | commands.update.execute.options.update-n
 
-## Examples
-* Update all entities
+## Примеры
+* Выполнить все обновления
 ```
 drupal update:execute
+```
+* Execute updates for system module
+```
+drupal update:execute system
 ```

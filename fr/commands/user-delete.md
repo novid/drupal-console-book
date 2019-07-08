@@ -10,7 +10,7 @@ ud
 ## Available options
 Option | Details
 -------|-------------
---user-id | Id de l'utilisateur à supprimer
+--user | User name/id to be deleted
 --roles | Rôles associés aux utilisateurs à supprimer
 
 ## Examples
@@ -24,4 +24,9 @@ drupal user:delete  \
 ```
 drupal user:delete  \
   --user-id="3"
+```
+* Delete users with the role "authenticated"
+```
+drupal user:delete  \
+  --role="authenticated"
 ```

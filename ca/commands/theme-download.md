@@ -3,8 +3,8 @@ Descarregar tema per l'aplicació
 
 **Ús:**
 ```
-$ drupal theme:download [arguments] [options]
-$ td  
+drupal theme:download [arguments] [options]
+thd
 ```
 
 ## Opcions disponibles
@@ -17,3 +17,9 @@ Argument | Detalls
 ---------|-------------
 theme | the Theme name
 version | Theme version i.e 1.x-dev
+
+## Exemples
+* Download theme specifying name and version
+```
+drupal theme:download  Alina 7.x-1.2
+```

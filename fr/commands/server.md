@@ -4,6 +4,8 @@ Lance le serveur web PHP interne
 **Usage:**
 ```
 drupal server [arguments]
+serve
+rs
 ```
 
 ## Available arguments

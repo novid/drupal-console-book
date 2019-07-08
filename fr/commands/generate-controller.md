@@ -5,7 +5,6 @@ Générer & enregistrer un contrôleur
 ```
 drupal generate:controller [options]
 gcon
-gcn
 ```
 
 ## Available options

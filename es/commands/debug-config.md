@@ -3,9 +3,14 @@ Lista los nombres de objetos de configuración y objectos de configuración úni
 
 **Uso:**
 ```
-drupal debug:config [arguments]
+drupal debug:config [arguments] [options]
 dc
 ```
+
+## Opciones disponibles
+Opción | Detalles
+-------|-------------
+--show-overridden | Mostrar configuraciones sobreescritas.
 
 ## Argumentos disponibles
 Argumento | Detalles
@@ -24,4 +29,8 @@ drupal config:debug system.site
 * Lista todos los nombres de configuración de sistema.
 ```
 drupal config:debug | grep system
+```
+* Lista toda la configuración incluyendo los valores sobreescritos.
+```
+drupal debug:config --show-overridden
 ```

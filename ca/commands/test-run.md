@@ -3,14 +3,14 @@ Executa els Test Units disponibles per l'aplicació
 
 **Ús:**
 ```
-$ drupal test:run [arguments] [options]
-$ tr  
+drupal test:run [arguments] [options]
+ter
 ```
 
 ## Opcions disponibles
 Opció | Detalls
 -------|-------------
---url | commands.test.run.arguments.url
+--url | Test url
 
 ## Arguments disponibles
 Argument | Detalls

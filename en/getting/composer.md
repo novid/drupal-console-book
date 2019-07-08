@@ -1,4 +1,4 @@
-# Install Drupal Console Using Composer
+# Install Drupal Console using Composer in an existing project
 
 Change directory to Drupal site:
 ```
@@ -12,7 +12,14 @@ composer require drupal/console:~1.0 \
 --optimize-autoloader
 ```
 
+If you install Drupal Console Using Composer on Docksal, execute following command firstly:
+
+```
+fin exec git config --global core.filemode false
+```
+
 ## Download using DrupalComposer project template
+This option downloads a new drupal project with drupalConsole included.
 ```
 composer create-project \
 drupal-composer/drupal-project:8.x-dev \

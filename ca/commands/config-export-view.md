@@ -3,8 +3,8 @@ Exportar una vista amb el format YAML en un mòdul per reutilitzar-lo en un altr
 
 **Ús:**
 ```
-$ drupal config:export:view [arguments] [options]
-$ cev  
+drupal config:export:view [arguments] [options]
+cev
 ```
 
 ## Opcions disponibles
@@ -18,3 +18,16 @@ Opció | Detalls
 Argument | Detalls
 ---------|-------------
 view-id | Identificador de la vista
+
+## Exemples
+* Provide a view id
+```
+drupal config:export:view viewid
+```
+* You can provide the interactive values like parameter.
+```
+drupal config:export:view viewid \
+  --module="modulename" \
+  --optional-config \
+  --include-module-dependencies
+```

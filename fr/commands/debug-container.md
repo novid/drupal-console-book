@@ -5,12 +5,14 @@ Affiche les services actuels d'une application.
 ```
 drupal debug:container [arguments] [options]
 dco
+cod
 ```
 
 ## Available options
 Option | Details
 -------|-------------
 --parameters | Nom du service.
+--tag | Service tag 
 
 ## Available arguments
 Argument | Details

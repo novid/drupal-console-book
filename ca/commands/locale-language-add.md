@@ -3,7 +3,7 @@ Afegir un idioma per el teu lloc web
 
 **Ús:**
 ```
-$ drupal locale:language:add [arguments]
+drupal locale:language:add [arguments]
 ```
 
 ## Arguments disponibles

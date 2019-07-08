@@ -5,6 +5,7 @@ Affiche les thèmes actuels de l'application
 ```
 drupal debug:theme [arguments]
 dt
+tde
 ```
 
 ## Available arguments

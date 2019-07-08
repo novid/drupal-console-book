@@ -5,6 +5,7 @@ Voir l'état actuel de l'installation Drupal
 ```
 drupal site:status [options]
 ss
+st
 ```
 
 ## Available options

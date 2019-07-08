@@ -3,8 +3,8 @@ Desintal·lar mòdul(s) en l'aplicació
 
 **Ús:**
 ```
-$ drupal module:uninstall [arguments] [options]
-$ mou  
+drupal module:uninstall [arguments] [options]
+mou
 ```
 
 ## Opcions disponibles
@@ -17,3 +17,9 @@ Opció | Detalls
 Argument | Detalls
 ---------|-------------
 module | Enter module name
+
+## Exemples
+* Uninstall the module specifying the module name
+```
+drupal module:uninstall  modulename
+```

@@ -3,11 +3,11 @@ Habilitar un recurs Rest per l'aplicació
 
 **Ús:**
 ```
-$ drupal rest:enable [arguments]
-$ ree  
+drupal rest:enable [arguments]
+ree
 ```
 
 ## Arguments disponibles
 Argument | Detalls
 ---------|-------------
-resource-id | Identificador Rest
+resource-id | Rest ID

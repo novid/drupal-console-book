@@ -5,6 +5,7 @@ Reconstruit l'ensemble des caches du site.
 ```
 drupal cache:rebuild [arguments]
 cr
+cc
 ```
 
 ## Available arguments

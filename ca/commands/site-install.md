@@ -3,8 +3,8 @@ Instal·lar un projecte Drupal
 
 **Ús:**
 ```
-$ drupal site:install [arguments] [options]
-$ si  
+drupal site:install [arguments] [options]
+si
 ```
 
 ## Opcions disponibles
@@ -24,8 +24,27 @@ Opció | Detalls
 --account-name | Nom de l'usuari administrador de Drupal
 --account-mail | Compte de correu de l'usuari administrador de Drupal
 --account-pass | Contrasenya de l'usuari administrador de Drupal
+--force | Force to reinstall the site
 
 ## Arguments disponibles
 Argument | Detalls
 ---------|-------------
 profile | Perfil Drupal a instal·lar
+
+## Exemples
+* Install a drupal project specifying installation type, language code, database configuration, site name, site email and admin credential settings
+```
+drupal site:install  standard  \
+  --langcode="en"  \
+  --db-type="mysql"  \
+  --db-host="127.0.0.1"  \
+  --db-name="drupal8"  \
+  --db-user="u53rn4m3"  \
+  --db-pass="dbp455"  \
+  --db-port="3306"  \
+  --site-name="Drupal 8"  \
+  --site-mail="admin@example.com"  \
+  --account-name="admin"  \
+  --account-mail="admin@example.com"  \
+  --account-pass="p455w0rd"
+```

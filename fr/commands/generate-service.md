@@ -11,12 +11,12 @@ gs
 Option | Details
 -------|-------------
 --module | Le nom du module.
---name | commands.generate.service.options.name
+--name | Le nom du service
 --class | Nom de la classe
---interface | commands.common.service.options.interface
---interface-name | commands.common.service.options.interface-name
+--interface | Interface
+--interface-name | Interface name
 --services | Charger des services depuis le conteneur.
---path-service | Chemin
+--path-service | Path
 
 ## Examples
 * Generate a services without interface specifying the module name, the service name, the class and its path

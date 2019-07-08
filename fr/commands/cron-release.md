@@ -5,7 +5,6 @@ Relâche le verrou lié au cron afin de pouvoir le relancer
 ```
 drupal cron:release
 cror
-crr
 ```
 
 ## Examples

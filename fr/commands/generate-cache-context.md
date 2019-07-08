@@ -11,7 +11,7 @@ gcc
 Option | Details
 -------|-------------
 --module | Le nom du module.
---cache-context | Enter the cache context name
+--cache-context | The cache context name
 --class | Cache context class name
 --services | Charger des services depuis le conteneur.
 

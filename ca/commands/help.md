@@ -3,7 +3,7 @@ Mostrar l'ajuda per un comandament
 
 **Ús:**
 ```
-$ drupal help [arguments] [options]
+drupal help [arguments] [options]
 ```
 
 ## Opcions disponibles
@@ -16,4 +16,4 @@ Opció | Detalls
 ## Arguments disponibles
 Argument | Detalls
 ---------|-------------
-command_name | Nom del comandament
+command_name | The command name

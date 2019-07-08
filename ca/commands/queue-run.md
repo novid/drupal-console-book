@@ -3,7 +3,8 @@ Process the selected queue.
 
 **Ús:**
 ```
-$ drupal queue:run [arguments]
+drupal queue:run [arguments]
+qr
 ```
 
 ## Arguments disponibles

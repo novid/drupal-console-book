@@ -3,5 +3,12 @@ Applying Entity Updates
 
 **Ús:**
 ```
-$ drupal update:entities
+drupal update:entities
+upe
+```
+
+## Exemples
+* Update entities
+```
+drupal update:entities
 ```

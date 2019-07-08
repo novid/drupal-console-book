@@ -1,13 +1,13 @@
 # settings:set
-Change a specific setting value in DrupalConsole config file
+Меняет значение для специфичной настройки в DrupalConsole файле настроек
 
-**Usage:**
+**Использование:**
 ```
 drupal settings:set [arguments] [options]
 ```
 
-## Available options
-Option | Details
+## Доступные параметры
+Команда | Детали
 -------|-------------
 --help | Display this help message
 --quiet | Do not output any message
@@ -18,7 +18,7 @@ Option | Details
 --no-interaction | Do not ask any interactive question
 --env | The Environment name
 --root | Define the Drupal root to be used in command execution
---debug | application.options.debug
+--debug | Switches on debug mode
 --learning | Generate a verbose code output
 --generate-chain | Shows command options and arguments as yaml output to be used in chain command
 --generate-inline | Shows command options and arguments as inline command
@@ -27,15 +27,15 @@ Option | Details
 --uri | URI of the Drupal site to use (for multi-site environments or when running on an alternate port)
 --yes | Skip confirmation and proceed
 
-## Available arguments
-Argument | Details
+## Доступные аргументы
+Аргумент | Детали
 ---------|-------------
 command | The command to execute
-name | Setting name in YAML flatten format to set a value in Drupal Console config file
-value | Setting value to set in Drupal Console config file
+name | Имя настройки в плоском формате YAML для установки значения в файле настроек Drupal Console
+value | Значение настройки для установки в Drupal Console файле настроек
 
-## Examples
-* Set application language setting value to "es"
+## Примеры
+* Устанавливает настройки языка приложения "es"
 ```
 drupal settings:set  application.language es
 ```

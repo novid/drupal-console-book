@@ -3,8 +3,8 @@ Instal·lar temes per l'aplicació
 
 **Ús:**
 ```
-$ drupal theme:install [arguments] [options]
-$ ti  
+drupal theme:install [arguments] [options]
+thi
 ```
 
 ## Opcions disponibles
@@ -15,4 +15,10 @@ Opció | Detalls
 ## Arguments disponibles
 Argument | Detalls
 ---------|-------------
-theme | commands.theme.install.options.module
+theme | Els temes a instal·lar han d'estar separats per comes
+
+## Exemples
+* Install theme specifying the name
+```
+drupal theme:install  mytheme
+```

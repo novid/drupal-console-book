@@ -3,11 +3,17 @@ Desinstal·lar els temes de l'aplicació
 
 **Ús:**
 ```
-$ drupal theme:uninstall [arguments]
-$ tu  
+drupal theme:uninstall [arguments]
+thu
 ```
 
 ## Arguments disponibles
 Argument | Detalls
 ---------|-------------
-theme | commands.theme.uninstall.options.module
+theme | Els temes a desinstal·lar han d'estar separats per comes
+
+## Exemples
+* Uninstall theme specifying the name
+```
+drupal theme:uninstall  mytheme
+```

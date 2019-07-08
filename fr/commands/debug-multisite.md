@@ -5,6 +5,7 @@ Liste toutes les installations multi-sites disponibles dans le système
 ```
 drupal debug:multisite
 dmu
+msd
 ```
 
 ## Examples

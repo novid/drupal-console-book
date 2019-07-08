@@ -1,5 +1,5 @@
 # generate:form
-Génère un nouveau "%s"
+Generate a new "FormBase"
 
 **Usage:**
 ```
@@ -10,13 +10,13 @@ gf
 ## Available options
 Option | Details
 -------|-------------
---module | Le nom du module.
---class | Le nom de classe du formulaire
---form-id | l'ID du formulaire
---services | Charger des services depuis le conteneur.
+--module | The Module name.
+--class | The form class name
+--form-id | The Form id
+--services | Load services from the container.
 --config-file | Add a config file
---inputs | Créer des entrées dans un formulaire.
---path | Entrez le chemin du formulaire
+--inputs | Create inputs in a form.
+--path | Enter the form path
 --menu-link-gen | Generate a menu link
 --menu-link-title | A title for the menu link
 --menu-parent | Menu parent

@@ -5,13 +5,12 @@ Lance un test unitaire à partir des tests mis à disposition par l'application
 ```
 drupal test:run [arguments] [options]
 ter
-tr
 ```
 
 ## Available options
 Option | Details
 -------|-------------
---url | commands.test.run.arguments.url
+--url | Test url
 
 ## Available arguments
 Argument | Details

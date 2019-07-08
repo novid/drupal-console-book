@@ -3,8 +3,8 @@ Generar una nova entitat de continguts
 
 **Ús:**
 ```
-$ drupal generate:entity:config [options]
-$ gecg  
+drupal generate:entity:config [options]
+gec
 ```
 
 ## Opcions disponibles
@@ -16,3 +16,14 @@ Opció | Detalls
 --base-path | El camí base per la configuració de rutes d'entitats
 --label | Etiqueta
 --bundle-of | Actua com a 'bundle' per l'entitat de continguts
+
+## Exemples
+* Generate config entity specifying the module, the entity class, the entity name, its path and label
+```
+drupal generate:entity:config  \
+  --module="modulename"  \
+  --entity-class="DefaultEntity"  \
+  --entity-name="default_entity"  \
+  --base-path="/admin/structure"  \
+  --label="Default entity"
+```
