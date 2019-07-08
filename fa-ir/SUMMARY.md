@@ -22,6 +22,10 @@
   * [چگونگی استفاده از کنسول دروپال در یک سرور راه‌دور](alias/how-to-use-drupal-console-in-a-remote-installation.md)
   * [اتصال به یک محیط مجازی](alias/connecting-to-a-virtual-environment.md)
 
+* [دستور زنجیره‌ای چیست](chains/what-is-a-chain-command.md)
+  * [ثبت دستورات زنجیره‌ای به عنوان دستورات معمولی](chains/registering.md)
+  * [فهرست دستوات ثبت شده](chains/listing-registered-commands.md)
+
 * [ایجاد دستورات سفارشی](extending/creating-custom-commands.md)
    * [کلاس Command](extending/the-command-class.md)
    * [ثبت دستورات](extending/registering-commands.md)
@@ -37,9 +41,6 @@
    * [بروزنگهداری fork از پروژه](contributing/keeping-your-fork-up-to-date.md)
    * [ایجاد issue و PR](contributing/creating-issues-and-pull-requests.md)
    * [مشارکت در مستندسازی](contributing/documentation.md "مشارکت در کتابچه کنسول دروپال")
-
-* [دستورات موجود](commands/available-commands.md)
-  {% include "./commands/available-commands-list.md" %}
 
 * [پرسش‌های متداول درباره کنسول دروپال](drupal_console_faq/faq.md)
    * [مشکلات نصب](drupal_console_faq/installation-problems.md)
